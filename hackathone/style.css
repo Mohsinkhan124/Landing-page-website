@@ -1,0 +1,754 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+  /* .bs-navbar-padding-y {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+} */
+
+  .nav-link {
+    color: #040E27;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif
+  }
+
+  .nav-link:hover {
+    color: #1ec6b6;
+  }
+
+  .num {
+    color: #040E27;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif
+  }
+
+  .bg-col {
+    background: red;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .ic-col {
+    color: #b8b3b3b2;
+  }
+
+  .carousel-caption {
+    bottom: 140px;
+  }
+
+  .carousel-caption h5 {
+    letter-spacing: 2px;
+    font-size: 110px;
+    font-weight: normal;
+    font-family: "Nothing You Could Do", cursive;
+    margin-bottom: 0px !important;
+  }
+
+  .carousel-para {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .explore-btn {
+    height: 60px;
+    width: 160px;
+    padding: 20px;
+    background: #1ec6b6;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .explore-btn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .explore-btn:hover {
+    background: #f42525;
+    cursor: pointer;
+  }
+
+  .sec-bg {
+    background-color: #040E27;
+  }
+
+
+
+  .sec-title {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+
+  }
+  /* Sirf "Date" dikhane ke liye */
+/* Calendar icon gray karna */
+.date-input::-webkit-calendar-picker-indicator {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+
+  .sec-input {
+    background-color: transparent;
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    color: rgb(194, 187, 187);
+    margin-right: 10px;
+  }
+
+  .custom-btn {
+    width: 120px;
+    background-color: #f42525;
+    padding: 14px;
+    border-radius: 5px;
+    text-align: center !important;
+    border: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-btn:hover {
+    background-color: #1ec6b6;
+  }
+
+  .bg-img {
+    position: relative;
+    background-image: url('./images/1.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-bra {
+    position: relative;
+    background-image: url('./images/2.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-bra::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+  .boxes {
+    transition: transform 0.3s ease;
+  }
+
+  .boxes:hover {
+    transform: translateY(-10px);
+  }
+
+  .bg-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+
+
+  .bg-img h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+  .bg-img-bra h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img-bra a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+  /* america */
+  .bg-img-amr {
+    position: relative;
+    background-image: url('./images/3.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-amr::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+  .bg-img-amr h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img-amr a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+  /* Nepal */
+
+  .bg-img-nep {
+    position: relative;
+    background-image: url('./images/4.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-nep::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+  .bg-img-nep h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img-nep a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+  /* Maldeves */
+
+  .bg-img-mal {
+    position: relative;
+    background-image: url('./images/5.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-mal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+  .bg-img-mal h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img-mal a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+  /* Indoneisa */
+
+  .bg-img-ind {
+    position: relative;
+    background-image: url('./images/6.png.webp');
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+
+  }
+
+  .bg-img-ind::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+  }
+
+  .bg-img-ind h3 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .bg-img-ind a {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: white;
+  }
+
+
+
+
+  .bg-colr {
+    background-color: #15f0da;
+    border-radius: 20px;
+    width: 80px !important;
+    padding-bottom: 3px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .bg-colr>a {
+    font-size: 12px;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+  }
+
+  /* third section */
+
+  .sec-bgs {
+    position: relative;
+    background-image: url('./images/banner4.jpg');
+    background-size: fill;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+    /* horizontal center */
+  }
+
+  .sec-bgs::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+  }
+
+
+  .text-h4 {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 10px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .p-subs {
+    position: relative;
+    /* Overlay se upar */
+    z-index: 1;
+    color: #aab1b7;
+    font-size: 18px;
+    line-height: normal;
+    font-family: "Rubik", sans-serif;
+  }
+
+
+  .custom-inputs {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 220px;
+    max-width: 300px;
+    margin-right: 10px;
+    background-color: #ffffff !important;
+  }
+
+
+  /* Fouth Section */
+
+  .popular_places_area {
+    padding-top: 142px;
+    padding-bottom: 150px;
+    background: #F7FAFD;
+  }
+
+  .mb_70 {
+    margin-bottom: 40px;
+  }
+
+  .section_title h3 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #040E27;
+    position: relative;
+    font-family: "Rubik", sans-serif;
+    z-index: 0;
+    padding-bottom: 7px;
+  }
+
+  .section_title p {
+    font-size: 16px;
+    color: #7A838B;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+  }
+
+
+  .popular_places_area .single_place .thumb .prise {
+    position: absolute;
+    background: #1EC6B6;
+    padding: 7px 18px 4px 18px;
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    text-decoration: none;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .thumb {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .single_place {
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .place_info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #040E27;
+    margin-bottom: 0;
+    font-family: "Rubik", sans-serif;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .popular_places_area .single_place .place_info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7A838B;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .popular_places_area .single_place .place_info .rating_days span i {
+    font-size: 12px;
+    color: #FDAE5C;
+  }
+
+  .popular_places_area .single_place .place_info .rating_days span a {
+    font-size: 14px;
+    color: #7A838B;
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .rating_days .days {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7A838B;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .rating_days .days a {
+    font-size: 14px;
+    color: #7A838B;
+    text-decoration: none;
+  }
+
+  .popular_places_area .single_place .place_info {
+    padding: 27px 20px 25px 20px;
+  }
+
+  .popular_places_area .more_place_btn {
+    margin-top: 40px;
+  }
+
+
+
+  .boxed-btn4 {
+    background: #FF4A52;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 39px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .boxed-btn4:hover {
+    background: #1EC6B6
+  }
+
+
+  .popular_places_area .single_place:hover .thumb .prise {
+    background-color: #FF4A52;
+  }
+
+  .popular_places_area .place_info h3:hover .thumb .prise {
+    background-color: #FF4A52;
+  }
+
+
+
+  .bg-img-yt {
+    background-image: url('./images/banner3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .enjoy {
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-family: "Nothing You Could Do", cursive;
+    color: #ffffff;
+  }
+
+  .play-btn {
+    background: #1EC6B6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* Section six */
+
+  .travel_variation_area {
+    padding-top: 150px;
+    padding-bottom: 114px;
+  }
+
+  .travel_variation_area .single_travel p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6E6E6E;
+    font-family: "Rubik", sans-serif;
+  }
+
+  /* Carousel */
+
+  .play-btns {
+    background: #1EC6B6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    position: relative;
+    left: 65px;
+    top: -40px;
+    z-index: 1;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .areas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f7fafd;
+    height: 400px;
+  }
+
+  .author-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .areas p {
+    color: #040E27;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 34px 0 10px 0;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .author-name {
+    color: #7A838B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .card-title-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A838B;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .card-descriptions {
+    color: #040E27;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: "Rubik", sans-serif;
+    line-height: normal;
+  }
+
+  .card:hover .card-descriptions {
+    color: #f42525;
+    transition: color 0.3s ease;
+  }
+
+  /* Fotter */
+  .ft-col {
+    background-color: #040E27;
+  }
+
+  .ccc {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+  }
+
+  .ccc:hover {
+    background-color: #009bd9;
+    cursor: pointer;
+  }
+
+  .ft-p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Rubik", sans-serif;
+    color: #AAB1B7;
+  }
+
+  .ft-header {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .linkss {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffffb3;
+    margin-bottom: 0%;
+  }
+
+  .linkss:hover {
+    color: #f42525;
+  }
+
+  .ista-img {
+     object-fit: cover;
+     height: 60px;
+     width: 100% !important;
+  }
+
+  .last-section-foter{
+     font-size: 14px;
+    color: #7A838B;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .last-section-foter a {
+     color: #f42525;
+  }
