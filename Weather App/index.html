@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Mobile Navbar -->
+<div class="mobile-nav">
+  <input type="search" placeholder="Search city..." id="mobile-search">
+  <button id="mobile-btn"><i class="ri-search-line"></i></button>
+  <button id="recent-toggle"><i class="ri-history-line"></i></button>
+</div>
+
+
+<div class="card">
+    <div class="search-bar">
+        <input type="search" placeholder="Enter City Name" id="search" spellcheck="false">
+        <button><i class="ri-search-line"></i></button>
+    </div>
+
+    <div class="loader" style="display: none;">
+  <div class="spinner"></div>
+</div>
+
+    <div class="weather">
+        <img src="./images/clouds.png" alt="img" class="weather-icon">
+        <h1 class="temp">12.9°C</h1>
+        <h2 class="city">karachi</h2>
+    </div>
+
+    <div class="details">
+        <div class="col">
+            <img src="./images/humidity.png" alt="">
+            <div>
+                <p class="humidity">50%</p>
+                <p style="color: white;">Humidity</p>
+            </div>
+        </div>
+        <div class="col">
+            <img src="./images/wind.png" alt="">
+            <div>
+                <p class="wind">15 km/h</p>
+                <p style="color: white;">Wind Speed</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Loader outside card -->
+<!-- Notification -->
+<div id="toast" class="toast"></div>
+
+<div class="recent-searches">
+   <h4>Recent Searches</h4>
+   <ul id="recentList"></ul>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
