@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 data-aos="zoom-in">Todo App</h1>
+    <div class="wrapper" data-aos="zoom-in">
+        <form>
+            <input type="text" id="todo-input" placeholder="write anything and hit enter to add" autocomplete="off">
+            <button id="add-button">ADD</button>
+        </form>
+        <ul id="todo-list" style="margin-top: 20px;">
+        </ul>
+        <button class="DelTBn" onclick="DeleteAll()">Delete All</button>
+    </div>
+     
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+     <script>
+         AOS.init({
+         duration: 1000,   // animation time (ms)
+        once: true        // animation sirf ek baar ho
+      });
+     </script>
+    <script src="app.js"></script>
+</body>
+</html>
