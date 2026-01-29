@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+   <button class="achorpage"><a href="./stopwatch.html">Stop Watch</a></button>
+
+  <div class="timer-card">
+    <h1>Timer App</h1>
+
+    <div class="circle">
+  <svg>
+    <circle cx="120" cy="120" r="110"></circle>
+    <circle cx="120" cy="120" r="110" id="progress"></circle>
+  </svg>
+  <div class="display" id="display">00:00:00</div>
+</div>
+
+
+    <div class="inputs">
+      <input type="number" id="hours" placeholder="Hr">
+      <input type="number" id="minutes" placeholder="Min">
+      <input type="number" id="seconds" placeholder="Sec">
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="beep">
+    <source src="https://actions.google.com/sounds/v1/alarms/bugle_tune.ogg">
+  </audio>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

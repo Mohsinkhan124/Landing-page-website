@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1100110469/thumb/1.jpg?ip=x480");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.timer-card {
+  width: auto; 
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.timer-card > h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0px;
+  text-shadow:  0 0 4px black;
+  margin-bottom: 60px;
+}
+
+.circle {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 25px auto;
+}
+
+svg {
+  width: 240px;
+  height: 240px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 12;
+  stroke: #333;
+}
+
+#progress {
+  stroke: #00c6ff;
+  stroke-dasharray: 691;
+  stroke-dashoffset: 691;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.my-progress-bar {
+  background: #00c6ff;
+}
+
+.display {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  color: white;
+  user-select: none;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.inputs input {
+  width: 80px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+button {
+  padding: 12px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 10px 25px rgba(0,114,255,0.6);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.achorpage {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.achorpage > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 1400px) {
+
+  .timer-card {
+    padding: 60px;
+    border-radius: 35px;
+  }
+
+  .timer-card > h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+
+
+  .inputs {
+    gap: 35px;
+    margin: 30px 0;
+  }
+
+  .inputs input {
+    width: 110px;
+    font-size: 22px;
+    padding: 14px;
+  }
+
+  button {
+    padding: 16px 45px;
+    font-size: 18px;
+    border-radius: 18px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .timer-card {
+    padding: 60px;
+    border-radius: 35px;
+  }
+
+  .timer-card > h1 {
+    font-size: 5rem;
+    margin-bottom: 25%;
+  }
+
+
+  .inputs {
+    gap: 35px;
+    margin: 30px 0;
+  }
+
+  .inputs input {
+    width: 90px;
+    font-size: 22px;
+    padding: 14px;
+  }
+
+  .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+  button {
+    padding: 16px 45px;
+    font-size: 18px;
+    border-radius: 18px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  body {
+    /* display: block !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important; */
+  }
+
+   .timer-card {
+    padding: 0px;
+    border-radius: 35px;
+  }
+
+  .timer-card > h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20%;
+  }
+
+
+  .inputs {
+    gap: 35px;
+    margin: 30px 0;
+  }
+
+  .inputs input {
+    width: 60px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+  button {
+    padding: 8px 26px;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+
+}
+

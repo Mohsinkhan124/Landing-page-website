@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/background/20250210/original/pngtree-detailed-look-at-a-professional-athletic-stopwatch-resting-picture-image_16257937.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  overflow-x: hidden;
+}
+
+.container {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    background-color: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.timer-display {
+    width: 100%;
+    padding: 40px 0px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #17c6f7, #0072ff);
+  color: #fff;
+  border-radius: 18px;
+  text-shadow: 0 0 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    user-select: none;
+}
+
+.laps {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.action {
+    width: 85%;
+    margin: 60px auto 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.action > button {
+    padding: 12px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 10px 25px rgba(0,114,255,0.6);
+}
+
+
+.action> button:hover {
+    box-shadow: none;
+}
+
+.action > button:active {
+  background: hsl(193, 100%, 40%);
+  box-shadow: 0 5px 12px rgba(0,114,255,0.4);
+  transform: scale(0.96);
+}
+
+
+.timerpage {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  padding: 12px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 10px 25px rgba(0,114,255,0.6);
+}
+
+.timerpage > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.timerpage:hover {
+   transform: translateY(-2px);
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  body {
+  background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+.container {
+    width: 70%;
+    position: static;
+    top: auto;
+    left: auto;
+    background-color: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.action {
+    width: 85%;
+    margin: 80px auto 0px auto;
+}
+
+.action > button {
+    padding: 14px 32px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.timer-display {
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.timerpage {
+  font-size: 18px;
+}
+
+}
+
+@media (max-width: 575px) {
+    
+.container {
+    width: 90%;
+    position: static;
+    top: auto;
+    left: auto;
+    background-color: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.timer-display {
+    width: 100%;
+    padding: 30px 0px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #17c6f7, #0072ff);
+  color: #fff;
+  border-radius: 12px;
+  text-shadow: 0 0 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+.action {
+    width: 90%;
+    margin: 50px auto 0px auto;
+    grid-gap: 20px;
+}
+
+.action > button {
+    padding: 12px 18px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+}
