@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #f42525;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("https://media.cntraveller.com/photos/66b4dd85072bc99496bf3d1a/4:3/w_5196,h_3897,c_limit/london-GettyImages-1869881584.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  background: #1EC6B6;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+.hero-btn:hover {
+  background-color: #FF6B6B;
+}
+
+
+/* Destination Cards */
+
+
+.destination-section {
+  background-color: #f7fafd;
+  padding: 60px;
+}
+
+.destination-section > h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.destination-section > p {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 60%;
+  margin: auto;
+  font-weight: 400;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.destination-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 12px;
+  height: 430px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.destination-card h3 {
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1EC6B6;
+}
+
+.destination-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #040E27; 
+  line-height: 1.3;
+  margin: 10px 20px 0px 10px;
+}
+
+.destination-btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background-color: #FF6B6B; 
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 15px !important;
+  transition: all 0.3s ease-in;
+}
+
+.destination-btn:hover {
+  background-color: #1EC6B6;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+
+/* Testimonials */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7fafd;
+  height: 400px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.author-image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-icon {
+  background: #1EC6B6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
+
+.testimonial-text {
+  color: #040E27;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 30px;
+  max-width: 700px;
+  font-family: "Rubik", sans-serif;
+}
+
+.author-name {
+  margin-top: 10px;
+  color: #7A838B;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Gallery */
+
+.gallery-section {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #040E27;
+}
+
+.gallery-section > p {
+  font-size: 1.25rem;
+  color: #111;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid > img {
+    width: 100%;
+    height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-grid > img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Contact */
+
+.contact-section {
+  position: relative;
+  padding: 60px 20px;
+  background: url('https://www.london.gov.uk/sites/default/files/styles/twitter_card_image/public/2023-02/Large_Web_Image-London-Skyline_1.jpg.webp?itok=fNGTwwjo') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+}
+.contactInfo{
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactInfo .box{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contactInfo .box .icon > i{
+    color: #040E27;
+}
+
+
+.contactInfo .box .text h3{
+    font-size: 16px;
+    color: #f42525;
+    font-weight: 500;
+    margin: 0;
+    text-align: justify;
+}
+
+.contactInfo .box .text p{
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+
+/* Contact Form */
+.contactForm{
+    flex: 1 1 45%; 
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.contactForm h2{
+    font-size: 28px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 150px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    background: #FF6B6B;
+}
+
+.ft-col {
+  background-color: #040E27;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  width: 95%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col.about {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 60px;
+  object-fit: cover;
+  object-position:top;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.ft-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Rubik", sans-serif;
+  color: #AAB1B7;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ccc {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ccc:hover {
+  background-color: #009bd9;
+}
+
+.links-and-gallery {
+  flex: 2 1 600px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-subcol {
+  flex: 1 1 200px;
+}
+
+.ft-header {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 15px;
+  word-spacing: 20px;
+}
+
+.linkss {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffffb3;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.linkss:hover {
+  color: #f42525;
+}
+
+.destinations-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.ista-img {
+  object-fit: cover;
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Footer bottom line */
+.footer-hr {
+  border: 0.5px solid #ffffff33;
+  margin: 40px 0 20px 0;
+}
+
+.last-section-footer {
+  font-size: 14px;
+  color: #7A838B;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.last-section-footer a {
+  color: #f42525;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .destinations-grid {
+    flex-direction: column;
+  }
+}
+
+/* ======= GLOBAL RESPONSIVE FIX ======= */
+@media (max-width: 1200px) {
+  .destination-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px){
+    .contact-grid{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contactInfo,
+    .contactForm{
+        flex: 1 1 100%;
+    }
+}
+
+/* ======= TABLET ======= */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .destination-section {
+    padding: 50px 30px;
+  }
+
+  .destination-section > p {
+    width: 90%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ======= MOBILE ======= */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Destination */
+  .destination-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-card {
+    height: auto;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 220px;
+  }
+
+  /* Contact */
+  .contact-section {
+    padding: 50px 15px;
+  }
+
+  .contactForm {
+    padding: 25px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* ======= SMALL MOBILE ======= */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .destination-section {
+    padding: 50px 20px;
+  }
+
+  .destination-section > h2 {
+    font-size: 2rem;
+  }
+
+  .gallery-section {
+    padding: 40px 20px;
+  }
+
+  .gallery-section h2 {
+    font-size: 26px;
+  }
+
+  .contactForm h2 {
+    font-size: 22px;
+  }
+
+}
