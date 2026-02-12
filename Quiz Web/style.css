@@ -552,5 +552,10 @@ body {
 
     .popup-info h2 {
         font-size: 22px;
-    }
+    } 
+    .quiz-header>span {
+    font-size: 14px;
+    font-weight: 500;
 }
+}
+
