@@ -64,18 +64,6 @@ body {
     filter: drop-shadow(0 0 5px #010a13);
 }
 
-.navbar>a {
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 0.3s;
-}
-
-.navbar>.active,
-.navbar>a:hover {
-    color: #c40094;
-}
-
 .container {
     width: 200%;
 }
@@ -566,3 +554,4 @@ body {
         font-size: 22px;
     }
 }
+
