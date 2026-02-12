@@ -25,7 +25,7 @@ let questions = [
   {
     numb: 3,
     question: "Which HTML tag is used for the largest heading?",
-    answer: "C. <h1>",
+    answer: "C. h1",
     options: [
       "A. h6",
       "B. h2",
@@ -103,3 +103,4 @@ let questions = [
     ]
   }
 ];
+
