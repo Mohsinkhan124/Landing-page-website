@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Water Bottle that tracks hydration, sends reminders and connects with mobile app. Stay healthy and hydrated.">
+    <meta name="keywords" content="Smart Bottle, Water Tracker, Hydration Reminder, Smart Hydration">
+    <meta name="author" content="Mohsin Khan">
+    <title>Smart Water Bottle</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+            <h2>Smart Water</h2>
+        </div>
+
+        <!-- Menu Icon -->
+        <i class="ri-menu-4-line menu-icon" id="menuIcon"></i>
+
+        <nav aria-label="Main navigation" class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#feature">Feature</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Header end -->
+    <!-- Hero Section start -->
+    <div class="hero-section" id="home">
+        <div class="hero-part1">
+            <h1>Smarter Way to Drink Water</h1>
+            <p>Stay fully hydrated effortlessly with our smart water bottle.
+                It intelligently tracks your intake, sends gentle reminders,
+                and helps you reach your daily health and wellness goals —
+                anytime, anywhere, stress-free.</p>
+            <button>Start Now</button>
+        </div>
+        <div class="hero-part2">
+            <img src="./images/heroimg.png" alt="">
+        </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Hero Section Start -->
+    <div class="hero-section" id="about">
+        <div class="hero-part2">
+            <img src="./images/about3.png" alt="">
+        </div>
+        <div class="hero-part1">
+             <h1>About Our Smart Water Bottle</h1>
+            <p>
+                Our Smart Water Bottle is designed to make hydration simple and effective.
+                With advanced sensor technology, it tracks your daily water intake
+                and provides real-time insights through a connected mobile app.
+            </p>
+            <p>
+                Whether you're at work, gym, or traveling, this bottle ensures
+                you never forget to stay hydrated. Built with premium materials,
+                it combines innovation, style, and health in one smart solution.
+            </p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+    <!-- Hero Section End -->
+    <!-- Feature Section Start -->
+    <section id="feature" class="features-section">
+        <h2>Why Choose Our Smart Bottle?</h2>
+        <p>Our smart bottle is designed to improve your hydration habits.</p>
+
+        <div class="features-container">
+
+            <article class="feature-card">
+                <span aria-hidden="true">
+                    <i class="fa-solid fa-droplet"></i>
+                </span>
+                <h3>Smart Tracking</h3>
+                <p>Automatically tracks your daily water intake in real time.</p>
+            </article>
+
+            <article class="feature-card">
+                <span aria-hidden="true">
+                    <i class="fa-solid fa-bell"></i>
+                </span>
+                <h3>Reminder Alerts</h3>
+                <p>LED glow and notifications remind you to stay hydrated.</p>
+            </article>
+
+            <article class="feature-card">
+                <span aria-hidden="true">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </span>
+                <h3>App Connectivity</h3>
+                <p>Syncs with your phone to monitor hydration data.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Feature Section End -->
+    <!-- Contact Section start -->
+    <div class="contact-section" id="contact">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fas fa-user"></i>Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i>Phone No.</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email"><i class="fas fa-envelope"></i>Your Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i>Your Message</label>
+            </div>
+            <button type="submit" class="msg-btn"><i class="fas fa-paper-plane"></i>Send Message</button>
+        </form>
+    </div>
+    <!-- Contact Section ENd -->
+     <footer>
+    <p>© 2026 Smart Water Bottle. All Rights Reserved.</p>
+</footer>
+ <script>
+    const menuIcon = document.getElementById("menuIcon");
+    const navMenu = document.getElementById("navMenu");
+
+    let isOpen = false;
+
+    menuIcon.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+
+      if (!isOpen) {
+        menuIcon.className = "ri-close-line menu-icon";
+        isOpen = true;
+      } else {
+        menuIcon.className = "ri-menu-4-line menu-icon";
+        isOpen = false;
+      }
+    });
+  </script>
+</body>
+</html>
