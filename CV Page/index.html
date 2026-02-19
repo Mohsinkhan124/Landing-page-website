@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohsin Khan - Interactive Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="header-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1BrCe-APUQkbJt_VrNq1BL5Z7vql6xE-Sw&s" 
+           alt="Mohsin Khan Profile Photo" 
+           class="profile-img">
+      <div class="header-text">
+        <h1>Mohsin Khan</h1>
+        <p>Front-end Developer | Web & App Developer</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="resume-container" role="main">
+    <div class="left-column">
+      <section id="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <p>Motivated Frontend Web Developer with experience in building responsive and interactive websites. Skilled in HTML, CSS, JavaScript, and modern frameworks like Bootstrap and Tailwind CSS. Focused on creating clean UI, user-friendly interfaces, and performance-optimized web applications.</p>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">
+          Experience
+          <button class="toggle-btn" id="toggle-experience" aria-label="Toggle Experience Section" aria-expanded="true">
+            <i class="fa-solid fa-circle-down"></i>
+          </button>
+        </h2>
+        <div id="experience-content">
+          <div class="job">
+            <h3>Frontend Web Development Intern at Aykas Agency</h3>
+            <p><strong>Jan 7, 2026 – Present</strong></p>
+            <p>Working on responsive web applications, building interactive UI components, and implementing clean layouts using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</p>
+          </div>
+          <div class="job">
+            <h3>Frontend Web Development Projects</h3>
+            <p><strong>Nov 2024 – Present</strong></p>
+            <p>Designed and developed personal and practice websites to improve UI/UX skills and gain hands-on frontend development experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">
+          Education
+          <button class="toggle-btn" id="toggle-education" aria-label="Toggle Education Section" aria-expanded="true">
+            <i class="fa-solid fa-circle-down"></i>
+          </button>
+        </h2>
+        <div id="education-content">
+          <div class="edu-item">
+            <h3>Ziauddin College</h3>
+            <p>Intermediate in Computer Science (2024 – 2026) – Currently in 2nd Year</p>
+          </div>
+          <div class="edu-item">
+            <h3>Adamjee Institute</h3>
+            <p>Web Development Course Completed (2025)</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>HTML</span>
+            <span>100%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>CSS</span>
+            <span>98%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="98"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>95%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="95"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Bootstrap</span>
+            <span>100%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="100"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Tailwind CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>GSAP</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-percent="70"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:mohsinkhantwy@gmail.com">mohsinkhantwy@gmail.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:03183822290">0318 3822290</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i>
+            <a href="#">linkedin.com/in/mohsinkhan</a>
+          </li>
+        </ul>
+        
+        <button class="download-btn" id="download-pdf">
+          <i class="fas fa-file-pdf"></i> Download Resume PDF
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Mohsin Khan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
