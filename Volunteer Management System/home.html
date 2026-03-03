@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Dashboard - Volunteer Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="volunteer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+</head>
+<body>
+
+     <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-hands-helping"></i> Volunteer Panel</h3>
+                <p id="userName">Loading...</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active" onclick="showSection('dashboard')"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#" onclick="showSection('availableEvents')"><i class="fas fa-calendar-alt"></i> Available Events</a></li>
+                <li><a href="#" onclick="showSection('myEvents')"><i class="fas fa-user-check"></i> My Events</a></li>
+                <li><a href="#" onclick="showSection('myHours')"><i class="fas fa-clock"></i> My Hours</a></li>
+                <li><a href="#" onclick="showSection('reports')"><i class="fas fa-chart-bar"></i> My Reports</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Section -->
+            <div id="dashboardSection" class="section">
+                <div class="welcome-section">
+                    <h2>Welcome Back, <span id="welcomeName">Volunteer</span>!</h2>
+                    <p>Here's your volunteering summary</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Events Registered</h3>
+                        <div class="stat-value" id="totalRegistered">0</div>
+                        <div class="stat-label">Total events you joined</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Total Hours</h3>
+                        <div class="stat-value" id="totalHours">0</div>
+                        <div class="stat-label">Hours volunteered</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-week"></i>
+                        <h3>Upcoming Events</h3>
+                        <div class="stat-value" id="upcomingEvents">0</div>
+                        <div class="stat-label">Events this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Impact Points</h3>
+                        <div class="stat-value" id="impactPoints">0</div>
+                        <div class="stat-label">Based on hours</div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="recent-activity">
+                    <h3><i class="fas fa-history"></i> Recent Activity</h3>
+                    <div class="activity-list" id="recentActivity">
+                        <p class="text-center">Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Available Events Section -->
+            <div id="availableEventsSection" class="section" style="display: none;">
+                <h2><i class="fas fa-calendar-alt"></i> Available Events</h2>
+                
+                <div class="filters">
+                    <input type="text" id="searchEvent" placeholder="Search events..." onkeyup="filterEvents()">
+                    <select id="filterDate" onchange="filterEvents()">
+                        <option value="all">All Dates</option>
+                        <option value="today">Today</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="thisWeek">This Week</option>
+                        <option value="nextWeek">Next Week</option>
+                    </select>
+                </div>
+                
+                <div class="events-grid" id="availableEventsGrid">
+                    <!-- Events will be loaded here -->
+                    <div class="text-center">Loading events...</div>
+                </div>
+            </div>
+
+            <!-- My Events Section -->
+            <div id="myEventsSection" class="section" style="display: none;">
+                <h2><i class="fas fa-user-check"></i> My Events</h2>
+                
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showEventTab('upcoming')">Upcoming</button>
+                    <button class="tab-btn" onclick="showEventTab('past')">Past</button>
+                </div>
+                
+                <div id="upcomingEventsTab" class="tab-content">
+                    <div class="events-grid" id="upcomingEventsGrid">
+                        <p class="text-center">Loading...</p>
+                    </div>
+                </div>
+                
+                <div id="pastEventsTab" class="tab-content" style="display: none;">
+                    <div class="events-grid" id="pastEventsGrid">
+                        <p class="text-center">Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Hours Section -->
+            <div id="myHoursSection" class="section" style="display: none;">
+                <h2><i class="fas fa-clock"></i> My Hours</h2>
+                
+                <div class="hours-summary">
+                    <div class="total-hours-card">
+                        <h3>Total Hours</h3>
+                        <div class="big-number" id="totalHoursDisplay">0</div>
+                        <p>Hours volunteered</p>
+                    </div>
+                    
+                    <div class="hours-breakdown">
+                        <h4>Hours by Event</h4>
+                        <div class="hours-list" id="hoursByEventList">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-table">
+                    <h3>Hours History</h3>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Date</th>
+                                    <th>Hours</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hoursHistoryBody">
+                                <tr><td colspan="4">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Reports Section -->
+            <div id="reportsSection" class="section" style="display: none;">
+                <h2><i class="fas fa-chart-bar"></i> My Reports</h2>
+                
+                <!-- Summary Cards -->
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <h4>Monthly Summary</h4>
+                        <div class="chart-container small-chart">
+                            <canvas id="monthlyChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <h4>Event Type Distribution</h4>
+                        <div class="chart-container small-chart">
+                            <canvas id="eventsPieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weekly Report -->
+                <div class="summary-card">
+                    <h4>Weekly Progress</h4>
+                    <div class="chart-container">
+                        <canvas id="weeklyChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Detailed Report -->
+                <div class="summary-card">
+                    <h4>Detailed Report</h4>
+                    <div class="table-responsive">
+                        <table id="detailedReportTable">
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Events</th>
+                                    <th>Hours</th>
+                                    <th>Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detailedReportBody">
+                                <tr><td colspan="4">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div id="eventDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalEventTitle">Event Details</h3>
+            <div id="modalEventContent"></div>
+            <button id="registerEventBtn" class="btn" onclick="registerForEvent()" style="display: none;">
+                <i class="fas fa-hand-paper"></i> Register for this Event
+            </button>
+            <button id="unregisterEventBtn" class="btn btn-danger" onclick="unregisterFromEvent()" style="display: none;">
+                <i class="fas fa-times"></i> Cancel Registration
+            </button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h3 id="successMessage">Success!</h3>
+            <button class="btn" onclick="closeSuccessModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="volunteer.js"></script>
+</body>
+</html>

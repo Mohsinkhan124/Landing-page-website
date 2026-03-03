@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Volunteer Management</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-hands-helping"></i> Admin Panel</h3>
+                <p id="userName">Loading...</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active" onclick="showSection('dashboard')"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#" onclick="showSection('createEvent')"><i class="fas fa-plus-circle"></i> Create Event</a></li>
+                <li><a href="#" onclick="showSection('manageEvents')"><i class="fas fa-calendar-alt"></i> Manage Events</a></li>
+                <li><a href="#" onclick="showSection('logHours')"><i class="fas fa-clock"></i> Log Hours</a></li>
+                <li><a href="#" onclick="showSection('reports')"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Section -->
+            <div id="dashboardSection" class="section">
+                <h2><i class="fas fa-tachometer-alt"></i> Dashboard Overview</h2>
+                
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Events</h3>
+                        <div class="stat-value" id="totalEvents">0</div>
+                        <div class="stat-label">Active volunteer opportunities</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Registered Volunteers</h3>
+                        <div class="stat-value" id="totalVolunteers">0</div>
+                        <div class="stat-label">Active volunteers</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Hours</h3>
+                        <div class="stat-value" id="totalHours">0</div>
+                        <div class="stat-label">Hours volunteered</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Upcoming Events</h3>
+                        <div class="stat-value" id="upcomingEvents">0</div>
+                        <div class="stat-label">Next 7 days</div>
+                    </div>
+                </div>
+
+                <!-- Recent Events -->
+                <div class="recent-events">
+                    <h3>Recent Events</h3>
+                    <div class="table-responsive">
+                        <table id="recentEventsTable">
+                            <thead>
+                                <tr>
+                                    <th>Event Title</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Volunteers</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentEventsBody">
+                                <tr><td colspan="5" class="text-center">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Event Section -->
+            <div id="createEventSection" class="section" style="display: none;">
+                <h2><i class="fas fa-plus-circle"></i> Create New Event</h2>
+                
+                <div class="create-event-form">
+                    <form id="createEventForm">
+                        <div class="form-group">
+                            <label for="eventTitle">Event Title</label>
+                            <input type="text" id="eventTitle" placeholder="Enter event title" required>
+                            <span class="error" id="titleError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDescription">Description</label>
+                            <textarea id="eventDescription" placeholder="Describe the volunteer opportunity" required></textarea>
+                            <span class="error" id="descError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDate">Date</label>
+                            <input type="datetime-local" id="eventDate" required>
+                            <span class="error" id="dateError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventLocation">Location</label>
+                            <input type="text" id="eventLocation" placeholder="Enter location" required>
+                            <span class="error" id="locationError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requiredVolunteers">Required Volunteers</label>
+                            <input type="number" id="requiredVolunteers" min="1" placeholder="Number of volunteers needed" required>
+                            <span class="error" id="volunteersError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-calendar-plus"></i> Create Event
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Manage Events Section -->
+            <div id="manageEventsSection" class="section" style="display: none;">
+                <h2><i class="fas fa-calendar-alt"></i> Manage Events</h2>
+                
+                <div class="events-grid" id="eventsGrid">
+                    <div class="text-center">Loading events...</div>
+                </div>
+            </div>
+
+            <!-- Log Hours Section -->
+            <div id="logHoursSection" class="section" style="display: none;">
+                <h2><i class="fas fa-clock"></i> Log Volunteer Hours</h2>
+                
+                <div class="hours-log">
+                    <div class="form-group">
+                        <label for="selectEvent">Select Event</label>
+                        <select id="selectEvent" required>
+                            <option value="">Choose an event</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="selectVolunteer">Select Volunteer</label>
+                        <select id="selectVolunteer" required>
+                            <option value="">Choose a volunteer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="hours-input-group">
+                        <input type="number" id="hoursWorked" min="0.5" step="0.5" placeholder="Hours worked">
+                        <button class="btn btn-small" onclick="logHours()">
+                            <i class="fas fa-save"></i> Log Hours
+                        </button>
+                    </div>
+                    
+                    <div id="hoursMessage" class="alert" style="display: none;"></div>
+                </div>
+                
+                <!-- Recent Hours Log -->
+                <div class="recent-hours">
+                    <h3>Recent Hours Logged</h3>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Volunteer</th>
+                                    <th>Hours</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentHoursBody">
+                                <tr><td colspan="4">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports Section -->
+            <div id="reportsSection" class="section" style="display: none;">
+                <h2><i class="fas fa-chart-bar"></i> Reports & Analytics</h2>
+                
+                <!-- Summary Cards -->
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <h4>Hours by Event</h4>
+                        <ul class="summary-list" id="hoursByEventList">
+                            <li>Loading...</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <h4>Top Volunteers</h4>
+                        <ul class="summary-list" id="topVolunteersList">
+                            <li>Loading...</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Chart -->
+                <div class="chart-container">
+                    <canvas id="hoursChart"></canvas>
+                </div>
+                
+                <!-- Date-wise Summary -->
+                <div class="summary-card">
+                    <h4>Daily Hours Summary</h4>
+                    <div class="table-responsive">
+                        <table id="dailyHoursTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Total Hours</th>
+                                    <th>Events</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dailyHoursBody">
+                                <tr><td colspan="3">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Event Modal -->
+    <div id="editEventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Edit Event</h3>
+            <form id="editEventForm">
+                <input type="hidden" id="editEventId">
+                <div class="form-group">
+                    <label for="editEventTitle">Event Title</label>
+                    <input type="text" id="editEventTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editEventDescription">Description</label>
+                    <textarea id="editEventDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editEventDate">Date</label>
+                    <input type="datetime-local" id="editEventDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="editEventLocation">Location</label>
+                    <input type="text" id="editEventLocation" required>
+                </div>
+                <div class="form-group">
+                    <label for="editRequiredVolunteers">Required Volunteers</label>
+                    <input type="number" id="editRequiredVolunteers" min="1" required>
+                </div>
+                <button type="submit" class="btn">Update Event</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    
+    <script src="./admin.js"></script>
+</body>
+</html>

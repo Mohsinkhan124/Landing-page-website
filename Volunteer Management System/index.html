@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Management - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="login-card">
+            <div class="image-side">
+                <img src="./images/login.avif" alt="Volunteers helping" class="login-image">
+                <div class="image-overlay">
+                    <h2>Volunteer Management System</h2>
+                    <p>Together we can make a difference</p>
+                </div>
+            </div>
+            
+            <!-- Right Side - Form -->
+            <div class="form-side">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Login to your account</p>
+                
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <small class="error" id="emailError"></small>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" >
+                        <small class="error" id="passwordError"></small>
+                    </div>
+                    
+                    <div class="options">
+                        <label class="remember">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" id="forgotPassword" class="forgot">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                
+                <p class="register-link">
+                    Don't have an account? 
+                    <a href="./signup.html">Register here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
