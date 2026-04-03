@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealCup Development - Recive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+  <link rel="stylesheet" href="https://ianlunn.github.io/Hover/css/hover-min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+
+  <!-- Header Section Start -->
+
+  <nav class="navbar navbar-expand-lg px-3 px-md-5 mb-2">
+    <div class="container-fluid">
+      <a href="#">
+        <img src="images/logo.png" alt="logo" width="230" class="navbar-brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto gap-3 gap-md-4 header-links mb-2 mb-lg-0">
+          <li class="nav-item nav-items pt-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item nav-items pt-2">
+            <a class="nav-link active" aria-current="page" href="#">Our Process</a>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link active" aria-current="page" href="#">Why Choose Us</a>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link active" aria-current="page" href="#">FAQ</a>
+          </li>
+          <li class="nav-item pt-2">
+            <div class="button-head">
+              <a href="#">Get Started</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section End -->
+
+  <!-- Slider Start -->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+    data-bs-interval="9500">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img height="580px" src="./images/slider1.jpg" class="d-block w-100" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-md-block">
+          <p>welcome to RealCap Development</p>
+          <h5>Your Trusted Partner in Land <br> Development And Investment</h5>
+          <p class="carousel-para">At RealCap Development, we transform possibilities into reality. From land
+            acquisition <br> to strategic development, we deliver unmatched expertise and results that matter.</p>
+          <div class="button-head">
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img height="580px" src="./images/slider2.jpg" class="d-block w-100" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption  d-md-block">
+          <p>welcome to RealCap Development</p>
+          <h5>Your Trusted Partner in Land <br> Development And Investment</h5>
+          <p class="carousel-para">At RealCap Development, we transform possibilities into reality. From land
+            acquisition <br> to strategic development, we deliver unmatched expertise and results that matter.</p>
+          <div class="button-head">
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img height="580px" src="./images/slider3.jpg" class="d-block w-100" alt="...">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-md-block">
+          <p>welcome to RealCap Development</p>
+          <h5>Your Trusted Partner in Land <br> Development And Investment</h5>
+          <p class="carousel-para">At RealCap Development, we transform possibilities into reality. From land
+            acquisition <br> to strategic development, we deliver unmatched expertise and results that matter.</p>
+          <div class="button-head">
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- solider end -->
+
+
+  <div class="boxes">
+    <div class="cards">
+      <div class="daba">
+        <i class="fa-solid fa-money-check-dollar"></i>
+      </div>
+      <div class="text">
+        <h3>fair cash offers</h3>
+        <p>Receive fair, transparent cash <br> offers tailored to your property.</p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="daba">
+        <i class="fa-regular fa-chart-bar"></i>
+      </div>
+      <div class="text">
+        <h3>fast closings</h3>
+        <p>Streamlined process for quick <br> closings, no delays.</p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="daba">
+        <i class="fa-regular fa-chart-bar"></i>
+      </div>
+      <div class="text">
+        <h3>steadfast support</h3>
+        <p>Real Cap Development offers <br> unwavering support throughout.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section End -->
+  <!-- Section start -->
+  <div class="main">
+    <h2>See How Our Process Work</h2>
+    <p>From receiving a fair cash offer to closing the deal quickly, our step-by-step approach ensures transparency,
+      speed, and satisfaction. See how easy it is to work with us and take the stress out of selling your land.</p>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+          <div class="card hvr-grow shadow rounded-0 d-flex align-items-center justify-content-center" style="width: 17rem;">
+            <div class="daba-box">
+              <i class="fa-solid fa-money-check-dollar"></i>
+            </div>
+            <div class="card-body text-center px-3">
+              <h5 class="card-title title-card">Thorough Land Analysis</h5>
+              <p class="card-text desc-card">At RealCap Development, we take the time to carefully evaluate your land to
+                understand its full potential.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+          <div class="card hvr-grow shadow rounded-0 d-flex align-items-center justify-content-center" style="width: 17rem;">
+            <div class="daba-box">
+              <i class="fa-solid fa-money-check-dollar"></i>
+            </div>
+            <div class="card-body text-center px-3">
+              <h5 class="card-title title-card">Receive Your Custom Offer</h5>
+              <p class="card-text desc-card">Once we’ve thoroughly evaluated your property, we’ll provide you with a
+                fair
+                and competitive cash offer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+          <div class="card hvr-grow shadow rounded-0 d-flex align-items-center justify-content-center" style="width: 17rem;">
+            <div class="daba-box">
+              <i class="fa-solid fa-money-check-dollar"></i>
+            </div>
+            <div class="card-body text-center px-3">
+              <h5 class="card-title title-card">Receive Your Custom Offer</h5>
+              <p class="card-text desc-card">Once we’ve thoroughly evaluated your property, we’ll provide you with a
+                fair
+                and competitive cash offer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+          <div class="card hvr-grow shadow rounded-0 d-flex align-items-center justify-content-center" style="width: 17rem;">
+            <div class="daba-box">
+              <i class="fa-solid fa-money-check-dollar"></i>
+            </div>
+            <div class="card-body text-center px-3">
+              <h5 class="card-title title-card">Review and Sign the Agreement</h5>
+              <p class="card-text desc-card">After you accept our offer, we’ll prepare a straightforward agreement for
+                you
+                to review.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section End -->
+  <!-- section start -->
+  <div class="container my-5 pt-4">
+    <div class="row ">
+      <div class="col-lg-7 col-md-12 col-12 pe-lg-4">
+        <h3 class="fs-2">About Real Cap Development</h3>
+        <p class="about-des">
+          RealCap Development is a trusted leader in land acquisition and development. With a commitment to integrity,
+          efficiency, and innovation, we specialize in providing fair cash offers, fast closings, and personalized
+          solutions tailored to your unique needs. Our mission is to deliver exceptional value while building lasting
+          relationships with our clients. Discover the difference of working with a team dedicated to your success.
+        </p>
+        <br />
+        <p class="about-des">
+          With years of experience in transforming land and creating value, we offer a seamless experience from start to
+          finish. Whether you're looking to sell or invest we provide a tailored strategy that aligns with your
+          objectives. Our expert team combines industry knowledge with innovative strategies to ensure the best results
+          every time.
+        </p>
+      </div>
+
+      <div class="col-lg-5 col-md-12 col-12 ps-lg-3">
+        <img src="./images/img1.jpg" class="img-fluid about-img" alt="about image">
+      </div>
+    </div>
+  </div>
+
+  <!-- section end -->
+  <!-- section start -->
+  <div class="container my-5 pt-4">
+    <div class="row">
+      <div class="col-lg-5 col-md-12 col-12 pe-lg-3">
+
+        <img src="./images/img2.webp" class="img-fluid about-img" alt="" />
+      </div>
+      <div class="col-lg-7 col-md-12 col-12 ps-lg-4">
+        <h3 class="fs-2 mt-2 mt-lg-0">Competitive Offers. Streamlined Process.</h3><br>
+        <p class="about-des mb-4">
+          At RealCap Development, we make land transactions simple and efficient. Our goal is to provide fair,
+          competitive offers while ensuring a hassle-free experience from start to finish.
+        </p>
+        <div class="d-flex gap-5">
+          <div class="d-flex">
+            <ul class="ul-text list-unstyled">
+              <li><i class="fa-solid fa-circle-check me-2"></i>Receive a fair offer.</li>
+              <li><i class="fa-solid fa-circle-check me-2"></i>Streamlined Process</li>
+              <li><i class="fa-solid fa-circle-check me-2"></i>Transparent Communication</li>
+              <li><i class="fa-solid fa-circle-check me-2"></i> Decisions</li>
+              <li><i class="fa-solid fa-circle-check me-2"></i>Tailored Solutions</li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <ul class="ul-text list-unstyled">
+              <li><i class="fa-solid fa-circle-xmark me-2" style="color: #f60404;"></i>No waiting game.</li>
+              <li><i class="fa-solid fa-circle-xmark me-2" style="color: #f60404;"></i>No commissions.</li>
+              <li><i class="fa-solid fa-circle-xmark me-2" style="color: #f60404;"></i>No unnecessary paperwork.</li>
+              <li><i class="fa-solid fa-circle-xmark me-2" style="color: #f60404;"></i>No closing costs.</li>
+              <li><i class="fa-solid fa-circle-xmark me-2" style="color: #f60404;"></i>No unexpected fees.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="button-sec">
+          <a href="#">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section end -->
+
+  <!-- Section three start -->
+
+  <div class="container-fluid section-three">
+    <h2>Why Choose Us?</h2>
+
+    <div class="row section-three-row">
+      <div class="col-md-4 col-4 p-2 secthree-text">
+        <p>Feature</p>
+      </div>
+      <div class="col-md-4 col-4 p-2 secthree-text">
+        <p>Listing with Realtor</p>
+      </div>
+      <div class="col-md-4 col-4 p-2 secthree-text">
+        <p>Selling to Us</p>
+      </div>
+    </div>
+
+    <div class="row bg-white">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Commissions / Fees:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Up to 6%, paid by you, the seller</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">None</p>
+      </div>
+    </div>
+
+    <div class="row" style="background-color: #E8F9FF;">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Who pays closing costs?</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">2% on average is paid by you, the seller</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">None - We pay all costs</p>
+      </div>
+    </div>
+
+    <div class="row bg-white">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Inspection & Financing Contingency*</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Yes, sales can fall through</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">None</p>
+      </div>
+    </div>
+
+    <div class="row" style="background-color: #E8F9FF;">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Appraisal Needed:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Yes, the sale is often subject to appraisal</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">NONE – We make cash offers</p>
+      </div>
+    </div>
+
+    <div class="row bg-white">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Average Days Until Sold:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">+/- 91 Days</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">IMMEDIATE CASH OFFER</p>
+      </div>
+    </div>
+
+    <div class="row" style="background-color: #E8F9FF;">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Number of Showings:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">30-60 +/- days after accepting buyers offer</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">The Date Of YOUR CHOICE</p>
+      </div>
+    </div>
+
+    <div class="row bg-white">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Closing Date:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">30-60 +/- days after accepting buyers offer</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">The Date of your choice</p>
+      </div>
+    </div>
+
+    <div class="row" style="background-color: #E8F9FF;">
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Who pays for Repairs?:</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">Negotiated During Inspection Period</p>
+      </div>
+      <div class="col-md-4 col-12 p-2 secthree-texts">
+        <p class="fw-medium mb-0">
+          None - We pay for all Repairs</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section three End -->
+
+  <!-- Section four start -->
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-md-6 col- section-four">
+        <h1>Integrity. Transparency. Efficiency.</h1>
+        <p>Our services include a full range of solutions designed to make your property selling process smooth and
+          rewarding. From fair cash offers and fast closings to zero out-of-pocket costs, we’re committed to providing
+          exceptional value and convenience at every step.</p>
+        <div class="button-sec">
+          <a href="#">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 mt-2 mt-md-0  d-flex gap-4 pb-2">
+        <div class="box">
+          <div class="icon-box">
+            <i class="fa-solid fa-money-check-dollar"></i>
+          </div>
+          <h2>fair cash offers</h2>
+          <p>Receive fair, transparent cash offers tailored to your property.</p>
+        </div>
+        <div class="box">
+          <div class="icon-box">
+            <i class="fa-solid fa-money-check-dollar"></i>
+          </div>
+          <h2>fast closings</h2>
+          <p>Fast, seamless closings tailored to match your preferred timeline</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section four End -->
+  <!-- Section five Start -->
+  <div class="container-fluid section-five">
+    <h2>Extra Tools to Simplify Your Experience</h2>
+    <p>At RealCap Development, we go beyond the basics by offering additional tools to enhance your land-selling
+      journey. From accurate valuations to expert insights, these resources are designed to empower you with
+      knowledge and make the process as smooth as possible.</p>
+    <!-- <div class="secfive-boxes"> -->
+    <div class="row gap-5 mt-4">
+      <div class="col-md-4 col-12 m-auto m-md-0 secfive-boxes text-center">
+        <div class="daba-box">
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <h3>Property Valuation Tool</h3>
+        <p>Discover the true value of your land with our comprehensive property valuation tool. By analyzing market
+          trends and property specifics, we ensure you get an accurate and competitive estimate.</p>
+      </div>
+      <div class="col-md-4 col-12 secfive-boxes text-center">
+        <div class="daba-box">
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <h3>Market Trends Insights</h3>
+        <p>Stay ahead of the curve with our up-to-date market insights. We provide key data and analysis to help you
+          make informed decisions about selling your property.</p>
+      </div>
+      <div class="col-md-4 col-12 secfive-boxes text-center">
+        <div class="daba-box">
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <h3>Personalized Support</h3>
+        <p>Benefit from dedicated support tailored to your unique needs. Our team is here to guide you every step of the
+          way, ensuring a seamless and stress-free experience.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section five End -->
+  <!-- Section six Start -->
+  <!-- <div class="container-fluid section-six">
+    <h2>Frequently Asked Questions</h2>
+    <p>Our FAQ section answers common questions about our services, including cash offers and the closing process. <br>
+      We aim to clarify your concerns and help you make informed decisions with confidence.</p>
+    <div class="secex-row">
+
+      <div>
+        <div class="textup">
+        <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="textup">
+        <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+      </div>
+      </div>
+      
+
+      <div>
+        <div class="textdown">
+        <p class="mb-0">We keep the process simple and hassle-free. First, you contact us with details about your land. Next, we evaluate your property and present you with a fair cash offer. Once you accept, we prepare a straightforward agreement and proceed to a quick closing..</p>
+      </div>
+      <div class="textdown">
+        <p class="mb-0">Yes! We buy land in all conditions and across various locations. Whether it’s vacant land, farmland, or undeveloped property, we’re interested.</p>
+      </div>
+      </div>
+
+    </div>
+  </div> -->
+  <!-- Section six End -->
+
+  <!-- Section 7 Start -->
+  <div class="container-fluid secseven">
+    <div class="row">
+      <div class="col-12 col-lg-6 secsevenbox">
+        <h2>Get a No-Obligation <br> Cash Offer Now</h2>
+        <i class="fa-solid fa-envelope"></i>
+        <span class="mb-0">support@realcapdevelopment.com</span><br>
+        <i class="fa-solid fa-phone"></i>
+        <span class="mb-0">918-409-0558</span><br>
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="mb-0">8211 E Regal Place Suite 100, Tulsa, Ok, 74133</span>
+        <h3>Find Us on Social Media</h3>
+        <p class="mb-0">Connect with us on social media for updates, news, and more.</p>
+        <div class="d-flex gap-2 mt-3">
+          <div class="icons-face">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="icons-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="icons-you">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+
+        <div class="box-auth">
+          <div class="d-flex gap-3 two-field">
+            <div class="input-group">
+              <input id="name" type="text" placeholder="Your Name*">
+              <small class="error" id="name-error"></small>
+            </div>
+            <div class="input-group">
+              <input id="email" type="email" placeholder="Your Email*">
+              <small class="error" id="email-error"></small>
+            </div>
+          </div>
+
+          <div class="input-groups">
+            <input id="phone" type="tel" placeholder="Phone Number*">
+            <small class="error" id="phone-error"></small>
+          </div>
+
+          <div class="input-groups">
+            <input id="size" type="text" placeholder="Property Size (Acreage)*">
+            <small class="error" id="size-error"></small>
+          </div>
+
+          <div class="input-groups">
+            <input id="address" type="text" placeholder="Property Address*">
+            <small class="error" id="address-error"></small>
+          </div>
+
+          <button class="signup" id="signupBtn" type="submit">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Section 7 End -->
+  <footer>
+    <p class="mb-0">&copy; 2025 RealCap Development. All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+</html>
