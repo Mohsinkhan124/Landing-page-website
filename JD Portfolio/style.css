@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+ 
+
+.nav-con {
+      margin-right: 150px;
+      border: 1px solid gray;
+}
+
+.nav-btn-con {
+      font-size: 14px;
+}
+
+.nav-btn-cons {
+      font-size: 14px;
+}
+
+.nav-btn-cons a {
+      color: white;
+      text-decoration: none;
+
+}
+
+.nav-btn-cons:hover {
+      background-color: white;
+      color: black;
+}
+
+.nav-btn-cons:hover a {
+      color: black;
+      text-decoration: none;
+}
+
+/* navbar end */
+.section1 {
+  margin-top: 80px;
+}
+
+.sec1-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.sec1-desc {
+  font-size: 16px;
+  color: #505050;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Buttons */
+.sec1-btn {
+  padding: 12px 20px !important;
+  background-color: black !important;
+  transition: all 0.3s ease;
+}
+
+.sec1-btn span {
+  color: white !important;
+  font-size: 14px;
+  font-family: "Outfit", sans-serif;
+}
+
+.sec1-btn:hover {
+  background-color: white !important;
+}
+
+.sec1-btn:hover span {
+  color: black !important;
+}
+
+.sec1-btns span {
+  font-size: 14px;
+  font-family: "Outfit", sans-serif;
+}
+
+.sec1-btns {
+  transition: all 0.3s ease;
+}
+
+.sec1-btns:hover {
+  background-color: black !important;
+}
+
+.sec1-btns:hover span {
+  color: white !important;
+}
+
+/* Image animation */
+.section1-img {
+  transition: transform 0.4s ease;
+}
+
+.section1-img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .sec1-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sec1-desc {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 {
+    margin-top: 40px;
+  }
+
+  .sec1-title {
+    font-size: 26px;
+  }
+
+  .sec1-desc {
+    font-size: 14px;
+  }
+
+  .section1-img {
+    width: 220px;
+  }
+
+  .sec1-btn,
+  .sec1-btns {
+    padding: 10px 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .sec1-title {
+    font-size: 22px;
+  }
+
+  .sec1-desc {
+    font-size: 13px;
+  }
+
+  .section1-img {
+    width: 180px;
+  }
+}
+
+/* 
+.sec1-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-style: normal;
+      line-height: 1.3em;
+      color: #000;
+}
+
+.sec1-desc {
+      font-size: 16px;
+      color: #505050;
+      font-family: "Outfit", sans-serif;
+}
+
+.sec1-btn {
+      padding: 12px 20px !important;
+      background-color: black !important;
+}
+
+.sec1-btn span {
+      color: white !important;
+
+      font-size: 14px;
+      font-family: "Outfit", sans-serif;
+}
+
+
+.sec1-btn:hover {
+      background-color: white !important;
+
+}
+
+.sec1-btn:hover span {
+      color: black !important;
+}
+
+.sec1-btns span {
+      font-size: 14px;
+      font-family: "Outfit", sans-serif;
+}
+
+.sec1-btns:hover {
+      background-color: black !important;
+}
+
+.sec1-btns:hover span {
+      color: white !important;
+} */
+
+  /* sEction 2 */
+
+/* Section Background */
+.sec2-bg {
+  margin-top: 30px;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+/* Title & Description */
+.sec2-in h2 {
+  font-size: 38px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.sec2-in p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: #505050;
+  margin-top: 20px;
+  line-height: 1.6em;
+}
+
+/* Cards */
+.card-sec2 {
+  width: 100%;
+  max-width: 23rem;
+  min-height: 280px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease-in-out;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.card-sec2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-sec2 .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Titles & Paragraphs */
+.sec2-title {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #000;
+}
+
+.sec2-desc {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin-top: 10px;
+  color: #505050;
+}
+
+/* Card Image */
+.sec2-img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sec2-img img {
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.sec2-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Hover Grow */
+.my-grow {
+  transition: transform 0.4s ease-in-out;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .sec2-in h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sec2-in p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .sec2-img img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec2-in h2 {
+    font-size: 26px;
+  }
+
+  .sec2-in p {
+    font-size: 14px;
+  }
+
+  .card-sec2 {
+    max-width: 20rem;
+  }
+
+  .sec2-img img {
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sec2-in h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+  }
+
+  .sec2-in p {
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+
+  .card-sec2 {
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+
+  .sec2-img img {
+    max-width: 80px;
+  }
+}
+
+
+
+/* Section 4 */ 
+
+
+.sec4-card,
+.sec4-card1 {
+  flex: 1 1 250px;  
+  margin-top: 0;
+}
+
+.sec4-card img,
+.sec4-card1 img {
+  width: 100%;      
+  height: auto;      
+  max-height: 340px; 
+  object-fit: cover;
+}
+
+/* margin alternation maintain karne ke liye */
+.sec4-card {
+  margin-top: -20px;
+}
+
+.sec4-card1 {
+  margin-top: 20px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 992px) {
+  .sec4-card,
+  .sec4-card1 {
+    flex: 1 1 45%; 
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sec4-card,
+  .sec4-card1 {
+    flex: 1 1 100%; 
+    margin-top: 10px;
+  }
+}
+
+
+/* Section 5 */
+
+.sec5-box {
+    position: relative;
+    height: 280px;
+    overflow: hidden; /* extra image cut ho jaye */
+}
+
+
+.sec5-img {
+    position: absolute;
+    right: 0;   
+    top: 0;
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+    z-index: -1;  
+}
+
+.sec5-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.sec5-in h2 {
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+.sec5-in p {
+    text-align: end;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.0em;
+    color: #505050;
+    margin-top: 20px;
+}
+
+.btns-sec5 {
+      height: 50px;
+      width: 50px;
+      border-radius: 50% !important;
+}
+
+
+.sec6 p {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #dad3d3;
+    margin-top: 25px;
+}
+
+.sec6 > button {
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px auto 0 auto;   
+    display: block;           
+    transition: all 0.5s ease-in;
+}
+
+.sec6 > button:hover {
+    background-color: white;
+    color: black;
+}
+
+.sec6-img {
+    max-width: 100%;   
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+
+
+
+.foters > p {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #505050;
+  margin-top: 10px;
+}
+
+/* Social icons */
+.ccc {
+  height: 30px;
+  width: 30px;
+  background-color: #615f5f;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ccc:hover { transform: scale(1.15); cursor: pointer; }
+
+/* Headings */
+.col-ft-1 > h5 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* Links look */
+.col-ft-1 > p {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #505050;
+  margin: 4px 0;
+  text-decoration: none;
+}
+.col-ft-1 > p > a { color: #505050; text-decoration: none; }
+.col-ft-1 > p > a:hover { color: #000; }
+
+/* --------------------------- */
+/* Tablet: keep two columns per row */
+/* --------------------------- */
+@media (max-width: 992px) {
+  .container-fluid .row > .col-sm-12.col-md-6 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .foters { text-align: left; }
+  .foters img { margin: 0; }
+
+  .row.row-cols-1.row-cols-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .row.row-cols-1.row-cols-md-2 > .col {
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    margin-top: 20px;
+  }
+
+  /* ✅ Get Help section left align */
+  .col-ft-1:last-child {
+    text-align: left;
+  }
+}
+
+/* --------------------------- */
+/* Mobile: Overview & Services -> 2-column lists */
+/* --------------------------- */
+@media (max-width: 768px) {
+  .container-fluid .row > .col-sm-12.col-md-6 {
+    width: 100% !important;
+    float: none;
+    padding: 0 0.5rem;
+  }
+
+  .foters { text-align: center; }
+  .foters img { margin: 0 auto 10px; display: block; }
+
+  .col-ft-1 {
+    text-align: left;
+  }
+  .col-ft-1 > p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-right: 8px;
+    margin: 6px 0;
+  }
+
+  .col-ft-1 > h5 {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .ccc {
+    height: 36px;
+    width: 36px;
+    margin: 0 6px;
+  }
+
+  .col-ft-1 > p > a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* ✅ Get Help section left align (mobile) */
+  .col-ft-1:last-child {
+    text-align: left;
+  }
+}
+
