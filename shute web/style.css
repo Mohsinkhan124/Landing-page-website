@@ -1,0 +1,1090 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-img {
+    height: 76px;
+    width: 100%;
+}
+
+.call-btn {
+    background-color: #BE238F;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.call-btn:hover {
+    transform: scale(90%);
+}
+
+.call-btn h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: .5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3a4170;
+    transition: color .3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #BE238F;
+}
+
+/* ========== SECTION 1 ========== */
+.section-1 {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.6) 0, rgba(0, 0, 0, 0) 60vh), url('./images/woman-happy.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-1 h1 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 43px;
+    text-shadow: 0 0 10px rgb(0 0 0 / .44);
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.section-1 p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 27px;
+    line-height: 1.2em;
+    text-shadow: 0 0 8px rgb(0 0 0 / .52);
+    color: #FFF;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.call-btn-free {
+    background-color: #BE238F;
+    padding: 12px 28px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    margin-top: 1.2rem;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.call-btn-free h2 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: .5px;
+}
+
+.call-btn-free:hover {
+    transform: scale(90%);
+    background-color: #fff;
+    color: #BE238F;
+}
+
+/* ========== SECTION 2 ========== */
+.container {
+    background-color: #139A9A;
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.same-box {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-right: 2px solid #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.same-box i {
+    font-size: 2rem;
+}
+
+.same-box:last-child {
+    border-right: none;
+}
+
+.same-box h3 {
+    font-size: 1.5rem;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+}
+
+/* ========== SECTION 3 ========== */
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 80px 0px;
+}
+
+.section-3 div {
+    width: 60%;
+    text-align: center;
+}
+
+.section-3 h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.section-3 p {
+    text-align: left;
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.section-3 em {
+    font-family: "Poppins", Sans-serif;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    margin-bottom: 16px !important;
+    display: block;
+}
+
+.call-btns {
+    background-color: #BE238F;
+    width: 200px;
+    border-radius: 6px;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 12px 0;
+}
+
+.call-btns:hover {
+    transform: scale(0.96);
+    background-color: #a01d78;
+}
+
+.call-btns h3 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ========== SECTION 4 ========== */
+.section-4 {
+    padding: 30px;
+    background-image: url('./images/feel-better.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-box-4 {
+    background-color: rgba(22, 22, 22, 0.6);
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.section-box-4 h2 {
+    font-family: "Poppins", Sans-serif;
+    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.section-box-4 p {
+    text-align: left;
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+/* ========== SECTION 5 ========== */
+.section-5 {
+    padding: 90px 70px;
+    text-align: center;
+}
+
+.section-5 h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    color: #000;
+    font-weight: 600;
+}
+
+.sec5-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.sec5-text {
+    text-align: left;
+    padding-right: 15px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.sec5-text p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.sec5-btn {
+    background-color: #BE238F;
+    padding: 8px 60px;
+    border-radius: 6px;
+    width: fit-content;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .2);
+    margin-top: 40px;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+
+.sec5-btn:hover {
+    transform: scale(90%);
+}
+
+.sec5-btn h3 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* ========== SECTION 6 (Testimonials Slider) ========== */
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2DDFF;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.section-6 h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    color: #000;
+    font-weight: 600;
+}
+
+.slider-container {
+    width: 90%;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.slider-container:active {
+    cursor: grabbing;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.section-6 p {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.8em;
+    font-style: italic;
+    margin: 20px;
+    font-family: "Poppins", Sans-serif;
+    user-select: none;
+}
+
+.section-6 h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #BE238F;
+    font-family: "Poppins", Sans-serif;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #BE238F;
+}
+
+/* ========== SECTION 7 ========== */
+.section-7 {
+    background-color: #D9FAFA;
+    padding: 40px;
+}
+
+.section-7 h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-7 p {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.steps-container .step-box {
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    border-right: 2px solid #000;
+}
+
+.step-box:last-child {
+    border-right: none;
+}
+
+.step-box p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.circle-step {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #D9FAFA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.circle-step div {
+    border: 2px solid #000;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-step>div>h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* ========== SECTION 9 ========== */
+.section-9 {
+    background-color: #22004D;
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section9-text {
+    background-color: #D1DAFF;
+    padding: 40px 40px 20px 40px;
+    height: auto;
+    width: 520px;
+    max-width: 90%;
+    margin-left: 0;
+}
+
+.section9-text h2 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 28px;
+    color: #000;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.section9-text p {
+    text-align: left;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.section9-text input {
+    width: 100%;
+    padding: .7rem .8rem;
+    transition: all .3s ease-in-out;
+    border: 1px solid #55595c;
+    border-radius: 3px;
+    color: #55595c;
+    font-size: 1rem;
+    line-height: inherit;
+    margin-bottom: 6px;
+}
+
+.section9-text input:focus {
+    outline: none;
+}
+
+.section9-text button {
+    color: #FFF;
+    background-color: #BE238F;
+    text-align: center;
+    padding: 10px 24px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.section9-text button:hover {
+    background-color: #fff;
+    color: #BE238F;
+}
+
+.section9-img img {
+    height: auto;
+    width: 80%;
+    max-width: 350px;
+    margin-left: 0;
+    display: block;
+}
+
+/* ========== SECTION 10 ========== */
+.section-10 {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section-10 h2 {
+    color: #139A9A;
+    font-family: "Poppins", Sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 250px;
+    width: 100%;
+}
+
+.contact-form div {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.contact-form div input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #55595c;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: "Poppins", Sans-serif;
+}
+
+.contact-form div input:focus {
+    outline: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #55595c;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: "Poppins", Sans-serif;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form .btn-sub {
+    background-color: #139A9A;
+    color: #fff;
+    text-align: center;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", Sans-serif;
+    margin-bottom: 1rem;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: transform .5s ease-in-out, background-color .5s ease-in-out, color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    border: 2px solid #139A9A;
+    color: #139A9A;
+}
+
+.section-10 hr {
+    margin-top: 50px;
+    width: 40%;
+}
+
+.section-10 button:last-of-type {
+    padding: 10px 75px;
+    background-color: #BE238F;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    font-family: "Poppins", Sans-serif;
+    transition: transform .3s ease-in-out;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section-10 button:last-of-type:hover {
+    transform: scale(90%);
+}
+
+.Policy-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Policy-links .links {
+    color: #139a9a;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 500;
+}
+
+.Policy-links .links:hover {
+    color: hsl(180, 78%, 24%);
+}
+
+.Policy-links span {
+    color: #55595c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-10 p {
+    color: #959fac;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+/* ========== RESPONSIVE DESIGN (TABLET & MOBILE) ========== */
+
+/* Tablet Styles (max-width: 991px) */
+@media (max-width: 991px) {
+    .header {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+    
+    .logo-img {
+        height: 50px;
+        width: auto;
+        margin-left: 10px;
+    }
+    
+    .call-btn {
+        display: none;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .section-1 {
+        height: 60vh;
+        background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.6) 0, rgba(0, 0, 0, 0) 40vh), url('./images/woman-happy.webp');
+    }
+    
+    .section-1 h1 {
+        font-size: 36px;
+    }
+    
+    .section-1 p {
+        font-size: 22px;
+    }
+    
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .same-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .section-3 div {
+        width: 80%;
+    }
+    
+    .section-box-4 {
+        width: 70%;
+    }
+    
+    .section-5 {
+        padding: 60px 30px;
+    }
+    
+    .sec5-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sec5-text {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .sec5-text p {
+        text-align: left;
+    }
+    
+    .section-7 {
+        padding: 30px 20px;
+    }
+    
+    .steps-container .step-box {
+        border-right: none;
+        margin-bottom: 40px;
+    }
+    
+    .steps-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-form {
+        padding: 0 40px;
+    }
+    
+    .contact-form div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form div input {
+        width: 100%;
+    }
+    
+    .section-10 hr {
+        width: 70%;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .logo-img {
+        height: 45px;
+        margin-left: 0;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        font-size: 15px;
+    }
+    
+    .call-btn {
+        display: flex;
+        padding: 6px 12px;
+    }
+    
+    .call-btn h2 {
+        font-size: 12px;
+    }
+    
+    .section-1 {
+        height: 50vh;
+        background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.6) 0, rgba(0, 0, 0, 0) 35vh), url('./images/woman-happy.webp');
+    }
+    
+    .section-1 h1 {
+        font-size: 28px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-1 p {
+        font-size: 18px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .call-btn-free {
+        padding: 8px 20px;
+    }
+    
+    .call-btn-free h2 {
+        font-size: 18px;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+    }
+    
+    .same-box {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .same-box:last-child {
+        border-bottom: none;
+    }
+    
+    .same-box i {
+        font-size: 1.6rem;
+    }
+    
+    .same-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    .section-3 {
+        padding: 40px 20px;
+    }
+    
+    .section-3 div {
+        width: 100%;
+    }
+    
+    .section-3 h2 {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+    
+    .section-3 p,
+    .section-3 em {
+        font-size: 17px;
+        text-align: left;
+    }
+    
+    .call-btns {
+        width: 180px;
+    }
+    
+    .call-btns h3 {
+        font-size: 22px;
+    }
+    
+    .section-4 {
+        padding: 0;
+    }
+    
+    .section-box-4 {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .section-box-4 h2 {
+        font-size: 28px;
+    }
+    
+    .section-box-4 p {
+        font-size: 16px;
+    }
+    
+    .section-5 {
+        padding: 50px 20px;
+    }
+    
+    .section-5 h2 {
+        font-size: 28px;
+    }
+    
+    .sec5-text p {
+        font-size: 17px;
+    }
+    
+    .sec5-btn {
+        padding: 6px 40px;
+        margin: 30px auto 0;
+    }
+    
+    .sec5-btn h3 {
+        font-size: 22px;
+    }
+    
+    .section-6 h2 {
+        font-size: 26px;
+    }
+    
+    .section-6 p {
+        font-size: 15px;
+        margin: 15px;
+    }
+    
+    .section-7 h2 {
+        font-size: 26px;
+    }
+    
+    .section-7 p {
+        font-size: 20px;
+    }
+    
+    .step-box p {
+        font-size: 16px;
+    }
+    
+    .circle-step {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .circle-step div {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .circle-step>div>h2 {
+        font-size: 22px;
+    }
+    
+    .section-9 {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    
+    .section9-text {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    
+    .section9-text h2 {
+        font-size: 24px;
+    }
+    
+    .section9-text button {
+        font-size: 22px;
+    }
+    
+    .section9-img img {
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .section-10 {
+        padding: 30px 20px;
+    }
+    
+    .section-10 h2 {
+        font-size: 24px;
+    }
+    
+    .contact-form {
+        padding: 0 10px;
+    }
+    
+    .contact-form .btn-sub {
+        font-size: 22px;
+    }
+    
+    .section-10 hr {
+        width: 90%;
+    }
+    
+    .Policy-links {
+        gap: 8px;
+    }
+    
+    .section-10 button:last-of-type {
+        padding: 8px 40px;
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 12px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    .section-1 h1 {
+        font-size: 24px;
+    }
+    
+    .section-1 p {
+        font-size: 16px;
+    }
+    
+    .call-btn-free h2 {
+        font-size: 16px;
+    }
+    
+    .section-3 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-3 p {
+        font-size: 15px;
+    }
+    
+    .call-btns h3 {
+        font-size: 20px;
+    }
+    
+    .section-box-4 h2 {
+        font-size: 24px;
+    }
+    
+    .section-5 h2 {
+        font-size: 26px;
+    }
+    
+    .sec5-btn h3 {
+        font-size: 20px;
+    }
+    
+    .section-6 h2 {
+        font-size: 22px;
+    }
+    
+    .section-7 h2 {
+        font-size: 24px;
+    }
+    
+    .section-7 p {
+        font-size: 18px;
+    }
+    
+    .contact-form .btn-sub {
+        font-size: 20px;
+    }
+}
