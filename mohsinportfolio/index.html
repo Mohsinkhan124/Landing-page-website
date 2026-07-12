@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Portfolio</title>
+    <!-- box icons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bxr  bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Mohsin Khan</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I'm passionate about creating clean and responsive websites using modern web technologies. I love turning
+                ideas into beautiful digital experiences.</p>
+
+            <div class="social-media">
+                <a href="https://web.facebook.com/profile.php?id=100085469515487" target="_blank"
+                    rel="noopener no-referrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://wa.me/923183822290" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+                    target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/mohsin-khan-31a508342" rel="noopener noreferrer"
+                    aria-label="Mohsin Khan on LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="#" class="btn" id="downloadBtn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/hmeremove.png" alt="img">
+        </div>
+    </section>
+
+    <!-- About section -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/aboutmohs.png" alt="img">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full Stack MERN Developer</h3>
+            <p>I'm a passionate 19-year-old <strong>Full Stack MERN Developer</strong> with expertise in building
+                complete web applications from scratch. After completing my frontend internship, I mastered the
+                <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong> and built multiple production-ready
+                projects including e-commerce platforms, real-time chat apps, and task management systems. I love
+                creating seamless, responsive, and animation-rich user experiences backed by robust server-side logic.
+                Currently, I'm exploring Next.js and TypeScript to expand my skills. My goal is to deliver high-quality,
+                scalable web solutions that make a real impact.</p>
+            <a href="#portfolio" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- service secton -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                 <i class="fa-brands fa-react"></i>
+            <h3>Frontend Development</h3>
+            <p>I build modern, responsive, and interactive user interfaces using React.js, JavaScript, TailwindCSS, and Bootstrap. Premium animations with Framer Motion and GSAP.</p>
+            <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-code-branch"></i>
+            <h3>Backend & API</h3>
+            <p>I develop scalable backend systems with Node.js, Express.js, and REST APIs. JWT authentication, real-time features with Socket.io, and secure database integration.</p>
+            <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-cubes"></i>
+            <h3>Full Stack MERN</h3>
+            <p>Complete web application development using MongoDB, Express.js, React, and Node.js. From planning to deployment, I deliver high-quality production-ready web solutions.</p>
+            <a href="#" class="btn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class="fa-brands fa-react"></i>
+            <h3>Frontend Development</h3>
+            <p>I build modern, responsive, and interactive user interfaces using React.js, JavaScript, TailwindCSS, and Bootstrap. Premium animations with Framer Motion and GSAP.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Backend & API</h3>
+            <p>I develop scalable backend systems with Node.js, Express.js, and REST APIs. JWT authentication, real-time features with Socket.io, and secure database integration.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="services-box">
+            <i class="fa-solid fa-cubes"></i>
+            <h3>Full Stack MERN</h3>
+            <p>Complete web application development using MongoDB, Express.js, React, and Node.js. From planning to deployment, I deliver production-ready solutions.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+</section> -->
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>Foodie Franchise</h4>
+                    <p>Order burgers, zinger, and cheeps. Add to cart and checkout.</p>
+                    <a href="https://franchise-management-sys.web.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>Volunteer Manager</h4>
+                    <p>Manage volunteers, events, and assignments. Simple role-based access system.</p>
+                    <a href="https://volunteer-management-system124.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>MyBindle Page</h4>
+                    <p>A modern and fully responsive landing page designed for a social brand platform with clean UI.</p>
+                    <a href="https://mobile-bindle-web.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>A travelo landing page web with a Clean and Responsive Design.</p>
+                    <a href="https://travelo-hackayhone.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Clean, responsive portfolio landing page built for all devices.</p>
+                    <a href="https://mr-jdportfolio.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="img">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Same design as the original Amazon website.</p>
+                    <a href="https://ui-amazon.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="https://formspree.io/f/movpaojj" method="POST" id="contactForm">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="number" name="number" placeholder="Mobile Number">
+                <input type="text" id="subject" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            <p id="error-msg" style="color: red; margin-top: 10px;"></p>
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Mohsin | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
