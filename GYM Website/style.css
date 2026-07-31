@@ -1,0 +1,73 @@
+html { scroll-behavior: smooth; }
+  body { background-color: #0f0f0f; width: 100%; overflow-x: hidden;}
+
+  /* ---------- Custom scrollbar ---------- */
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0f0f0f; }
+  ::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: #facc15; }
+
+  /* ---------- Reveal-on-scroll ---------- */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+  .reveal-delay-4 { transition-delay: .4s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal, .marquee-track { transition: none !important; animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+
+  /* ---------- Marquee (signature element: gym-wall motivational ticker) ---------- */
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 26s linear infinite;
+  }
+  .marquee-track.reverse { animation-direction: reverse; animation-duration: 32s; }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-outline {
+    -webkit-text-stroke: 1.5px #facc15;
+    color: transparent;
+  }
+
+  /* ---------- Angled section edges ---------- */
+  .clip-angle-b { clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%); }
+  .clip-angle-t { clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
+
+  /* ---------- Accent underline ---------- */
+  .accent-bar { width: 56px; height: 5px; background: #facc15; }
+
+  /* ---------- Numbered plate style for stat labels ---------- */
+  .plate {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: .18em;
+  }
+
+  /* Focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid #facc15;
+    outline-offset: 2px;
+  }
+
+  /* Pricing highlighted card glow */
+  .glow-yellow { box-shadow: 0 0 0 1px #facc15, 0 20px 60px -15px rgba(250,204,21,.35); }
+
+  /* FAQ accordion animation */
+  .faq-content { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+
+  /* Nav link underline hover */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ""; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #facc15;
+    transition: width .25s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  /* Back to top */
+  #backToTop { transition: opacity .3s ease, transform .3s ease; }
