@@ -1,0 +1,241 @@
+ /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+            scroll-behavior: smooth;
+        }
+
+        /* Focus states */
+        input:focus,
+        select:focus,
+        button:focus {
+            outline: 2px solid #4f46e5;
+            outline-offset: 2px;
+        }
+
+        /* Smooth transitions */
+        .fade-transition {
+            transition: all 0.25s ease;
+        }
+
+        /* Navbar mobile menu */
+        .mobile-nav-open .mobile-menu {
+            max-height: 500px;
+            opacity: 1;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 0.75rem;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-top: none;
+            margin-top: 0;
+        }
+
+        /* Result card animations */
+        .result-enter {
+            animation: resultFade 0.4s ease forwards;
+        }
+
+        @keyframes resultFade {
+            0% {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* FAQ accordion */
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.35s ease, padding 0.3s ease;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 400px;
+            opacity: 1;
+            padding-top: 0.75rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        /* Stat counter pulse (subtle) */
+        .stat-number {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        /* Button loading spinner */
+        .btn-spinner {
+            display: inline-block;
+            width: 1.1rem;
+            height: 1.1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+
+        @keyframes pulseRing {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+            50% {
+                transform: scale(1.08);
+                opacity: 0.8;
+            }
+        }
+
+        .illustration-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .illustration-content .phone-icon {
+            font-size: 4.5rem;
+            color: #4f46e5;
+            background: white;
+            padding: 1.25rem;
+            border-radius: 2rem;
+            box-shadow: 0 8px 30px rgba(79, 70, 229, 0.15);
+        }
+
+        .illustration-content .badge-row {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .illustration-content .badge-row span {
+            background: white;
+            padding: 0.35rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1e293b;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .illustration-content .badge-row span i {
+            color: #4f46e5;
+            font-size: 0.7rem;
+        }
+
+        /* feature card hover */
+        .feature-card {
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.10);
+        }
+
+        /* CTA section */
+        .cta-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+        }
+
+        /* Responsive illustration */
+        @media (max-width: 1024px) {
+            .illustration-placeholder {
+                min-height: 200px;
+                padding: 1.5rem;
+            }
+            .illustration-content .phone-icon {
+                font-size: 3.2rem;
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .illustration-placeholder {
+                min-height: 160px;
+                padding: 1rem;
+            }
+            .illustration-content .phone-icon {
+                font-size: 2.4rem;
+                padding: 0.75rem;
+            }
+            .illustration-content .badge-row span {
+                font-size: 0.65rem;
+                padding: 0.2rem 0.7rem;
+            }
+        }
+
+        /* Scroll margin for anchor offset */
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
+
+        /* Input group styling */
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .input-group select,
+        .input-group input {
+            flex: 1 1 0;
+            min-width: 140px;
+        }
+
+        @media (max-width: 480px) {
+            .input-group select,
+            .input-group input {
+                min-width: 100%;
+                flex-basis: 100%;
+            }
+            .input-group button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
