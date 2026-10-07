@@ -1,0 +1,2323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 30px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: #484848;
+    font-weight: 500;
+}
+
+.frame {
+    position: absolute;
+    right: 0%;
+    height: 120vh;
+    width: 37%;
+}
+
+.btn-group>.btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 26px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-group>.btn:hover {
+    background-color: #1572d3;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-group>.btns {
+    background-color: hsl(211, 82%, 45%);
+    border: none;
+    padding: 10px 26px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-group>.btns:hover {
+    background-color: hsl(211, 82%, 40%);
+}
+
+.hero-section {
+    padding: 0px 120px;
+    display: flex;
+}
+
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    gap: 0px;
+}
+
+.hero1>h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero1>p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-section>div>img {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    width: 55%;
+    height: 80%;
+}
+
+
+.search-box {
+    height: 64px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    margin-top: 40px !important;
+    display: flex;
+    align-items: center;
+    margin: 0px 120px;
+    padding: 0 20px;
+
+}
+
+.search-item {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.location-item {
+    flex: 1.15;
+}
+
+.search-icon {
+    width: 38px;
+    min-width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #777;
+    font-size: 15px;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 0;
+}
+
+.search-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+
+    margin-bottom: 3px;
+}
+
+.search-placeholder {
+    font-size: 12px;
+    color: #b7b7b7;
+
+    white-space: nowrap;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background: #dedede;
+}
+
+.search-button-wrapper {
+    padding-left: 10px;
+}
+
+.search-button {
+    width: 95px;
+    height: 38px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #0879d1;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.search-button:hover {
+    background: #066bb9;
+}
+
+
+/* third section */
+.how-it-works {
+    width: 100%;
+    padding: 80px 120px;
+    text-align: center;
+    background: #fff;
+}
+
+/* Heading */
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-heading span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 40px;
+
+    background: #e8f4fd;
+    color: #0879d1;
+
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-heading h2 {
+    margin-top: 13px;
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* Steps */
+
+.steps-container {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 38px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step {
+    width: 190px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Icon Box */
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+
+    background: #e8f4fd;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0879d1;
+    font-size: 24px;
+}
+
+
+/* Step Heading */
+
+.step h3 {
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* Description */
+
+.step p {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1;
+
+    color: #777;
+}
+
+/* Company Section */
+.company-section {
+    width: 100%;
+    padding: 40px 120px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+.section-heading span {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #0879d1;
+}
+
+.company-logos {
+    width: 100%;
+    margin: 38px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-logos img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* Section 4 */
+
+/* ================================
+   WHY CHOOSE US SECTION
+================================ */
+
+.why-choose-section {
+    width: 100%;
+    min-height: 620px;
+    padding: 80px 0px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.why-image-area {
+    width: 50%;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Background / Shape Image */
+
+.why-bg-image {
+    position: absolute;
+    width: 750px;
+    height: 620px;
+    object-fit: fill;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+/* Car */
+
+.why-car-image {
+    position: absolute;
+    width: 650px;
+    height: 340px;
+    max-width: none;
+    top: 120px;
+    left: -40px;
+    bottom: 45px;
+    z-index: 2;
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.why-content {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Label */
+
+.why-label {
+    width: 181px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ECF5FF;
+    color: #1572D3;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* Main Heading */
+
+.why-content>h2 {
+    margin: 0 0 42px 0;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.why-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+
+/* Icon Box */
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ECF5FF;
+
+    border-radius: 14px;
+
+    color: #1572D3;
+
+    font-size: 18px;
+}
+
+
+/* Feature Text */
+
+.feature-content {
+    margin-left: 24px;
+}
+
+
+.feature-content h3 {
+    margin: 0 0 10px 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.feature-content p {
+    margin: 0;
+
+    color: #6D6D6D;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.1;
+
+    font-weight: 400;
+}
+
+
+/* 24 Number */
+
+.twenty-four {
+    position: absolute;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    background: #1572D3;
+
+    padding: 2px 3px;
+
+    border-radius: 2px;
+
+    top: 22px;
+    left: 25px;
+}
+
+
+/* Section 5 */
+.popular-deals {
+    width: 100%;
+    padding: 80px 20px 82px;
+    background: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.popular-heading {
+    text-align: center;
+}
+
+.popular-heading span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 226px;
+    height: 42px;
+
+    background: #eaf4ff;
+    color: #1572d3;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.popular-heading h2 {
+    margin: 17px 0 57px;
+
+    color: #333333;
+
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.cars-container {
+    width: 100%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.car-card {
+    width: 100%;
+    min-height: 405px;
+
+    padding: 25px 24px 23px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 25px rgba(21, 114, 211, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CAR IMAGE
+========================= */
+
+.car-image {
+    width: 100%;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   CAR NAME
+========================= */
+
+.car-card h3 {
+    margin: 0 0 8px;
+
+    color: #262626;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.rating {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 12px;
+}
+
+.rating i {
+    color: #EFBF14;
+    font-size: 13px;
+}
+
+.rating strong {
+    color: #292929;
+    font-weight: 500;
+}
+
+.rating span {
+    color: #959595;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.car-details {
+    margin-top: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 11px;
+    column-gap: 8px;
+}
+
+.car-details div {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #959595;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.car-details i {
+    width: 16px;
+
+    color: #959595;
+
+    font-size: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LINE
+========================= */
+
+.card-line {
+    width: 100%;
+    height: 1px;
+
+    background: #E0E0E0;
+
+    margin: 23px 0 20px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #595959;
+
+    font-size: 14px;
+}
+
+.price-row div {
+    display: flex;
+    align-items: baseline;
+}
+
+.price-row strong {
+    color: #262626;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price-row div span {
+    color: #959595;
+
+    margin-left: 4px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RENT BUTTON
+========================= */
+
+.rent-btn {
+    width: 100%;
+    height: 41px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #1572D3;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+.rent-btn i {
+    font-size: 15px;
+}
+
+
+/* =========================
+   SHOW ALL BUTTON
+========================= */
+
+.show-all-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    width: 216px;
+    height: 49px;
+
+    margin: 64px auto 0;
+
+    background: #ffffff;
+
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+
+    color: #595959;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.show-all-btn i {
+    font-size: 14px;
+}
+
+
+/* ================================
+   TESTIMONIAL SECTION
+================================ */
+
+.testimonials-section {
+    width: 100%;
+    min-height: 740px;
+
+    padding-top: 85px;
+    padding-bottom: 65px;
+
+    background: #F7FBFF;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* ================================
+   BIG QUOTATION MARKS
+================================ */
+
+.testimonials-section::before {
+    content: "“";
+
+    position: absolute;
+
+    left: 105px;
+    top: 25px;
+
+    font-size: 430px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    color: rgba(21, 114, 211, 0.10);
+
+    z-index: 0;
+}
+
+.testimonials-section::after {
+    content: "”";
+
+    position: absolute;
+
+    right: 85px;
+    top: -115px;
+
+    font-size: 430px;
+    line-height: 1;
+
+    font-weight: 700;
+
+    color: rgba(21, 114, 211, 0.10);
+
+    z-index: 0;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.testimonials-heading {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.testimonials-heading span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 42px;
+    background: #E5F1FF;
+    color: #1572D3;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.testimonials-heading h2 {
+    margin: 16px 0 70px;
+    color: #383838;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* ================================
+   SLIDER
+================================ */
+
+.testimonial-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+
+.testimonial-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    /* transform: translateX(-513px); */
+    transition: transform 0.8s ease-in-out;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.testimonial-card {
+    width: 795px;
+    height: 438px;
+    flex-shrink: 0;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(21, 114, 211, 0.12);
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.testimonial-image {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.testimonial-content {
+    width: 50%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Rating */
+
+.rating-number {
+    color: #383838;
+    font-size: 62px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.rating-number span {
+    font-size: 23px;
+    margin-left: 5px;
+}
+
+
+/* Stars */
+
+.stars {
+    display: flex;
+    gap: 7px;
+    margin-top: 17px;
+}
+
+.stars i {
+    color: #EFBF14;
+    font-size: 19px;
+}
+
+
+/* Review */
+
+.testimonial-content p {
+    margin: 42px 0 0;
+    color: #282828;
+    font-size: 17px;
+    line-height: 1.45;
+    max-width: 330px;
+}
+
+
+/* Customer */
+
+.customer-info {
+    margin-top: auto;
+}
+
+.customer-info h3 {
+    color: #282828;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.customer-info span {
+    color: #838383;
+    font-size: 14px;
+}
+
+/* Second last section */
+
+/* Main Container */
+.app-download-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin-top: 80px;
+    padding: 0% 120px;
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+/* Background Image styling (Arrow up) */
+.bg-arrow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover; /* Taki image puray container me fit ho jaye */
+    z-index: 1; /* Content ke peechay rakhne ke liye */
+}
+
+/* Left Content Area */
+.content-left {
+    position: relative;
+    z-index: 2; /* Background image ke upar lane ke liye */
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Download Badge */
+.badge {
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 42px;
+    background: hsl(212, 100%, 90%);
+    color: #1572D3;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.main-heading {
+    font-size: 46px;
+    font-weight: 700;
+    color: #2c2c2c;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #1976d2; /* Blue color for FREE */
+}
+
+/* Subheading Styling */
+.sub-heading {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* App Store Buttons */
+.store-links {
+    display: flex;
+    gap: 15px;
+}
+
+.store-img {
+    height: 45px; /* Size adjust kar sakte hain images ke mutabiq */
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Right Content Area (Mobile Image) */
+.content-right {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-image {
+    max-width: 90%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+}
+
+/* Responsive Design (Mobile aur Tablets ke liye) */
+@media (max-width: 768px) {
+    .app-download-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .content-left {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .store-links {
+        justify-content: center;
+    }
+
+    .content-right {
+        justify-content: center;
+    }
+}
+
+
+/* Footer Variables based on provided colors */
+:root {
+    --bg-dark: #051C34;
+    --text-white: #FFFFFF;
+    --text-grey: #D6D6D6;
+    --line-color: #575757;
+}
+
+/* Footer Container Setup */
+.site-footer {
+    background-color: var(--bg-dark);
+    color: var(--text-grey);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Column Styling */
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.brand-col {
+    flex: 2; /* Logo wala column thora bara rakha hai */
+    min-width: 250px;
+}
+
+/* Logo Setup */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    height: 30px; /* Logo ki height adjust kar lena */
+    width: auto;
+}
+
+.logo-text {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Contact Info List */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-info i {
+    color: var(--text-white);
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+/* Footer Headings */
+.footer-heading {
+    color: var(--text-white);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Footer Links List */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: var(--text-grey);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-white);
+}
+
+/* Social Icons */
+.follow-col {
+    min-width: 120px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--text-grey);
+    border-radius: 8px; /* Slightly rounded corners */
+    color: var(--text-grey);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--bg-dark);
+    background-color: var(--text-white);
+    border-color: var(--text-white);
+}
+
+/* Footer Bottom Section (Copyright) */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 20px 20px 0;
+    border-top: 1px solid var(--line-color);
+    font-size: 13px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .brand-col, .footer-col {
+        min-width: 100%;
+    }
+    
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 25px 50px;
+    }
+
+    header > ul {
+        gap: 25px;
+    }
+
+    .hero-section {
+        padding: 0 50px;
+    }
+
+    .hero1 {
+        height: 65vh;
+    }
+
+    .hero1 > h2 {
+        font-size: 40px;
+    }
+
+    .hero-section > div > img {
+        width: 52%;
+        height: auto;
+        top: 28%;
+    }
+
+    .search-box {
+        margin: 0 50px;
+        margin-top: 20px !important;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 25px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header > ul {
+        display: none;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 5px;
+    }
+
+    .btn-group > .btn,
+    .btn-group > .btns {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 0 25px;
+        flex-direction: column;
+    }
+
+    .hero1 {
+        height: auto;
+        min-height: 45vh;
+        justify-content: center;
+        padding-top: 30px;
+        gap: 12px;
+    }
+
+    .hero1 > h2 {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .hero1 > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-section > div > img {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .search-box {
+        height: auto;
+        margin: 25px 25px 0 !important;
+        padding: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-item {
+        width: 100%;
+        height: 45px;
+    }
+
+    .location-item {
+        flex: 1;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .search-button-wrapper {
+        padding-left: 0;
+    }
+
+    .search-button {
+        width: 100%;
+        height: 42px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+    .btn-group > .btn,
+    .btn-group > .btns {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero1 {
+        padding-top: 20px;
+    }
+
+    .hero1 > h2 {
+        font-size: 30px;
+    }
+
+    .hero1 > p {
+        font-size: 13px;
+    }
+
+    .search-box {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .search-title {
+        font-size: 13px;
+    }
+
+    .search-placeholder {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    .how-it-works {
+        padding: 60px 50px;
+    }
+
+    .steps-container {
+        max-width: 680px;
+    }
+
+    .step {
+        width: 170px;
+    }
+
+    .step p {
+        line-height: 1.4;
+    }
+
+    .company-section {
+        padding: 40px 50px;
+    }
+
+    .company-logos {
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .company-logos img {
+        width: 105px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .how-it-works {
+        padding: 55px 25px;
+    }
+
+    .section-heading span {
+        width: 125px;
+        height: 36px;
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        margin-top: 12px;
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .steps-container {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+        max-width: 100%;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .step-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+    }
+
+    .step h3 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .step p {
+        margin-top: 7px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* Company Section */
+
+    .company-section {
+        padding: 40px 25px;
+    }
+
+    .company-section .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .company-logos {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .company-logos img {
+        width: 100px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .how-it-works {
+        padding: 45px 20px;
+    }
+
+    .section-heading span {
+        width: 115px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .steps-container {
+        gap: 30px 12px;
+    }
+
+    .step-icon {
+        width: 62px;
+        height: 62px;
+        font-size: 20px;
+    }
+
+    .step h3 {
+        font-size: 14px;
+    }
+
+    .step p {
+        font-size: 11px;
+    }
+
+
+    .company-section {
+        padding: 35px 20px;
+    }
+
+    .company-section .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .company-logos {
+        gap: 20px;
+    }
+
+    .company-logos img {
+        width: 85px;
+    }
+}
+
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+
+    /* WHY CHOOSE US */
+
+    .why-choose-section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .why-image-area {
+        width: 50%;
+        height: 500px;
+    }
+
+    .why-bg-image {
+        width: 600px;
+        height: 500px;
+    }
+
+    .why-car-image {
+        width: 520px;
+        height: auto;
+        top: 130px;
+        left: -35px;
+    }
+
+    .why-content {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 35px;
+    }
+
+    .why-content > h2 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .why-feature {
+        margin-bottom: 22px;
+    }
+
+    .feature-content {
+        margin-left: 18px;
+    }
+
+    .feature-content h3 {
+        font-size: 16px;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* POPULAR DEALS */
+
+    .popular-deals {
+        padding: 65px 40px 70px;
+    }
+
+    .popular-heading h2 {
+        font-size: 34px;
+        margin-bottom: 45px;
+    }
+
+    .cars-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 700px;
+    }
+
+    .car-card {
+        min-height: 400px;
+    }
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       WHY CHOOSE US
+    ========================= */
+
+    .why-choose-section {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .why-image-area {
+        width: 100%;
+        height: 360px;
+        order: 1;
+    }
+
+    .why-bg-image {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        left: 0;
+        bottom: 0;
+    }
+
+    .why-car-image {
+        width: 90%;
+        height: auto;
+        max-width: 550px;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .why-content {
+        width: 100%;
+        padding: 45px 25px 0;
+        order: 2;
+    }
+
+    .why-label {
+        width: 165px;
+        height: 38px;
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .why-content > h2 {
+        font-size: 29px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .why-feature {
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        font-size: 17px;
+    }
+
+    .feature-content {
+        margin-left: 16px;
+        flex: 1;
+    }
+
+    .feature-content h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .feature-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .twenty-four {
+        top: 19px;
+        left: 22px;
+    }
+
+
+    /* =========================
+       POPULAR DEALS
+    ========================= */
+
+    .popular-deals {
+        padding: 55px 20px 65px;
+    }
+
+    .popular-heading span {
+        width: 205px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    .popular-heading h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 15px 0 40px;
+    }
+
+    .cars-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .car-card {
+        min-height: 390px;
+        padding: 20px 16px 18px;
+        border-radius: 13px;
+    }
+
+    .car-image {
+        height: 90px;
+        margin-bottom: 18px;
+    }
+
+    .car-card h3 {
+        font-size: 15px;
+    }
+
+    .rating {
+        font-size: 11px;
+    }
+
+    .rating i {
+        font-size: 12px;
+    }
+
+    .car-details {
+        margin-top: 13px;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+    .car-details div {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .car-details i {
+        width: 14px;
+        font-size: 13px;
+    }
+
+    .card-line {
+        margin: 20px 0 17px;
+    }
+
+    .price-row {
+        font-size: 12px;
+    }
+
+    .price-row strong {
+        font-size: 14px;
+    }
+
+    .price-row div span {
+        font-size: 11px;
+    }
+
+    .rent-btn {
+        height: 39px;
+        margin-top: 17px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .rent-btn i {
+        font-size: 13px;
+    }
+
+    .show-all-btn {
+        width: 200px;
+        height: 45px;
+        margin-top: 45px;
+        font-size: 13px;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    /* WHY CHOOSE US */
+
+    .why-choose-section {
+        padding: 40px 0;
+    }
+
+    .why-image-area {
+        height: 290px;
+    }
+
+    .why-bg-image {
+        height: 290px;
+    }
+
+    .why-car-image {
+        width: 100%;
+        top: 75px;
+    }
+
+    .why-content {
+        padding: 35px 20px 0;
+    }
+
+    .why-label {
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .why-content > h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .why-feature {
+        margin-bottom: 22px;
+    }
+
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .feature-content {
+        margin-left: 13px;
+    }
+
+    .feature-content h3 {
+        font-size: 14px;
+    }
+
+    .feature-content p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .twenty-four {
+        top: 17px;
+        left: 20px;
+        font-size: 7px;
+    }
+
+
+    /* POPULAR DEALS */
+
+    .popular-deals {
+        padding: 45px 15px 55px;
+    }
+
+    .popular-heading span {
+        width: 190px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .popular-heading h2 {
+        font-size: 24px;
+        margin: 13px 0 32px;
+    }
+
+    .cars-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        max-width: 350px;
+    }
+
+    .car-card {
+        min-height: 400px;
+        padding: 22px 20px 20px;
+    }
+
+    .car-image {
+        height: 110px;
+    }
+
+    .car-card h3 {
+        font-size: 16px;
+    }
+
+    .rating {
+        font-size: 12px;
+    }
+
+    .car-details div {
+        font-size: 11px;
+    }
+
+    .car-details i {
+        font-size: 14px;
+    }
+
+    .price-row strong {
+        font-size: 15px;
+    }
+
+    .rent-btn {
+        height: 41px;
+        font-size: 13px;
+    }
+
+    .show-all-btn {
+        width: 190px;
+        height: 44px;
+        margin-top: 40px;
+    }
+}
+
+
+/* =================================
+   TESTIMONIALS RESPONSIVE
+================================= */
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+
+    .testimonials-section {
+        min-height: auto;
+        padding-top: 65px;
+        padding-bottom: 55px;
+    }
+
+    .testimonials-section::before {
+        left: 35px;
+        top: 30px;
+        font-size: 300px;
+    }
+
+    .testimonials-section::after {
+        right: 25px;
+        top: -80px;
+        font-size: 300px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 34px;
+        margin-bottom: 55px;
+    }
+
+    .testimonial-track {
+        gap: 25px;
+    }
+
+    .testimonial-card {
+        width: 700px;
+        height: 390px;
+        border-radius: 18px;
+    }
+
+    .testimonial-content {
+        padding: 25px 30px;
+    }
+
+    .rating-number {
+        font-size: 52px;
+    }
+
+    .stars {
+        margin-top: 14px;
+    }
+
+    .testimonial-content p {
+        margin-top: 32px;
+        font-size: 15px;
+        max-width: 290px;
+    }
+
+    .customer-info h3 {
+        font-size: 21px;
+    }
+
+    .customer-info span {
+        font-size: 13px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .testimonials-section {
+        min-height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .testimonials-section::before {
+        left: -20px;
+        top: 35px;
+        font-size: 220px;
+    }
+
+    .testimonials-section::after {
+        right: -20px;
+        top: -45px;
+        font-size: 220px;
+    }
+
+    .testimonials-heading span {
+        width: 145px;
+        height: 37px;
+        font-size: 13px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 28px;
+        margin: 14px 0 38px;
+    }
+
+    .testimonial-track {
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        width: calc(100vw - 40px);
+        height: auto;
+        min-height: 500px;
+        flex-direction: column;
+        border-radius: 16px;
+    }
+
+    .testimonial-image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        min-height: 270px;
+        padding: 22px 25px;
+    }
+
+    .rating-number {
+        font-size: 45px;
+    }
+
+    .rating-number span {
+        font-size: 18px;
+    }
+
+    .stars {
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .stars i {
+        font-size: 16px;
+    }
+
+    .testimonial-content p {
+        margin-top: 22px;
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    .customer-info {
+        margin-top: 20px;
+    }
+
+    .customer-info h3 {
+        font-size: 19px;
+    }
+
+    .customer-info span {
+        font-size: 12px;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .testimonials-section {
+        padding-top: 42px;
+        padding-bottom: 45px;
+    }
+
+    .testimonials-section::before {
+        left: -35px;
+        top: 40px;
+        font-size: 170px;
+    }
+
+    .testimonials-section::after {
+        right: -35px;
+        top: -30px;
+        font-size: 170px;
+    }
+
+    .testimonials-heading span {
+        width: 135px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 24px;
+        margin: 12px 0 30px;
+    }
+
+    .testimonial-track {
+        gap: 15px;
+    }
+
+    .testimonial-card {
+        width: calc(100vw - 30px);
+        min-height: 470px;
+        border-radius: 14px;
+    }
+
+    .testimonial-image {
+        height: 200px;
+    }
+
+    .testimonial-content {
+        min-height: 270px;
+        padding: 20px;
+    }
+
+    .rating-number {
+        font-size: 40px;
+    }
+
+    .rating-number span {
+        font-size: 16px;
+    }
+
+    .stars i {
+        font-size: 14px;
+    }
+
+    .testimonial-content p {
+        margin-top: 18px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .customer-info h3 {
+        font-size: 17px;
+    }
+
+    .customer-info span {
+        font-size: 11px;
+    }
+}
